@@ -1,342 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Section</title>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ram Mopati Portfolio</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+    }
 
-<style>
-  .about-section {
-    text-align: center;
-    padding: 50px 0;
-  }
-  .about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .about-section img {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px;
-    border-radius: 50%; /* Makes the image round */
-    margin-bottom: 20px;
-  }
-  .about-section p {
-    color: #333;
-  }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: linear-gradient(to right, #091d4b, #091e0e);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-  /* Additional CSS for Projects Section */
-.projects-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.card {
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
-}
-.card-img-top {
-  max-height: 180px; /* Adjust this value to fit the image properly in the card */
-  object-fit: cover; /* This makes sure the image covers the area properly */
-}
-.card-body {
-  padding: 15px;
-}
-.card-title {
-  font-size: 1.25rem;
-}
-.card-text {
-  margin-bottom: 15px;
-}
+    .header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
 
-/* Additional CSS for Skills Section */
-.skills-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.skills-section .card {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.skills-section .card-img-top {
-  padding: 20px; /* Add padding around your images if needed */
-  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
-  height: 180px; /* Fixed height for consistency */
-  object-fit: contain; /* This will make sure the image is scaled properly within the container */
-}
-.skills-section .card-body {
-  padding: 15px;
-}
-.skills-section .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-}
-.skills-section .btn-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
-}
-.skills-section .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
+    .header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
 
-/* Additional CSS for Contact Section */
-.contact-section {
-  padding: 50px 0;
-}
-.contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-.contact-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-.social-icon {
-  width: 50px; /* Size of your icons */
-  margin-bottom: 10px;
-}
-/* Hover effect for icons */
-.social-icon:hover {
-  opacity: 0.7;
-}
-/* Style for links in the Contact section */
-.contact-section a {
-  color: #fff;
-  text-decoration: none; /* Removes underline from links */
-  display: inline-block; /* Allows for margin on the bottom */
-  margin-bottom: 10px;
-}
-.contact-section a:hover {
-  color: #ddd; /* Color when hovering over the link */
-}
+    .header nav a:hover {
+      text-decoration: underline;
+    }
 
-/* CSS for Sticky Navbar */
-.navbar {
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
-}
+    .profile-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 100px 40px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+    }
 
-/* Ensure padding is added to body to avoid content being hidden behind the navbar */
-body { 
-  padding-top: 56px; /* Adjust this value based on the height of your navbar */
-}
+    .profile-pic {
+      width: 700px;
+      height: 500px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
+    .intro-text {
+      text-align: right;
+      max-width: 50%;
+    }
 
-/* Style for navigation bar links */
-.navbar-nav .nav-link {
-  color: white;
-}
+    .intro-text h1 {
+      font-size: 3.5rem;
+      margin: 20px 0;
+    }
 
-.navbar-nav .nav-link:hover {
-  color: #f8f9fa; /* Slightly lighter white when hovering over links */
-}
+    .intro-text p {
+      font-size: 1.5rem;
+    }
 
-/* Media query for responsive navbar collapsing */
-@media (max-width: 992px) {
-  .navbar-collapse {
-    background-color: #343a40; /* Same as navbar color for seamless look */
-  }
-}
+    .section {
+      padding: 60px 20px;
+    }
 
+    #about {
+      background-color: #f0f8ff; /* Light Blue */
+      text-align: center;
+    }
 
-</style>
+    #work-experience {
+      background-color: #e6f7e6; /* Light Green */
+    }
 
+    #projects {
+      background-color: #fffaf0; /* Light Yellow */
+    }
+
+    .projects-container, .work-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .project-card, .work-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 350px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover, .work-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card img, .work-card img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    #projects .projects-container {
+      gap: 40px;
+    }
+
+    .project-card {
+      max-width: 400px;
+    }
+  </style>
 </head>
 <body>
+  <header class="header">
+    <h1>Ram Mopati</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work-experience">Work Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section id='about' class="about-section">
-  <div class="container">
-    <h2>About</h2>
-    <img src="images/about/1.jpg" alt="About Me">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet dolor dolor. Suspendisse ligula elit, hendrerit ut bibendum quis, facilisis vitae est. Vivamus vitae felis sit amet sem rhoncus euismod. Praesent commodo lorem porttitor. Nam in condimentum ex. Nam accumsan nisi turpis, sed tempus dolor volutpat non. Proin id enim feugiat ipsum consectetur mattis. Nam blandit venenatis nisi, convallis imperdiet nisi condimentum at.</p>
-    <p>Duis convallis ligula sed pretium tristique. Duis nunc risus, lacinia eget cursus id, suscipit ac metus. Sed varius sed tortor congue aliquam. In in dapibus diam, in auctor purus. Praesent vitae tristique diam. Donec tincidunt hendrerit tortor, vitae lobortis purus rutrum sit amet. Nunc non arcu vitae leo rhoncus tincidunt vel sed urna. Sed sed efficitur dui. Morbi id velit nisi. Fusce luctus placerat purus eu cursus.</p>
-  </div>
-</section>
+  <section class="profile-section">
+    <img src="assets/your-photo.jpg" alt="Your Photo" class="profile-pic">
+    <div class="intro-text">
+      <h1>Hi, I'm Ram Mopati</h1>
+      <p>Aspiring Data Scientist | Software Engineer</p>
+    </div>
+  </section>
 
+  <section id="about" class="section">
+    <h2 data-aos="fade-up">About Me</h2>
+    <p data-aos="fade-up">I am a passionate software engineer transitioning into data science. I have experience in quality assurance and building predictive models to solve real-world problems. My goal is to leverage data insights to drive impactful decisions.</p>
+  </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects-section bg-light" id="projects">
-  <div class="container">
-    <h2 class="text-center">Projects</h2>
-    <div class="row">
-      <!-- Project 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
-          </div>
-        </div>
+  <section id="work-experience" class="section">
+    <h2 data-aos="fade-up">Work Experience</h2>
+    <div class="work-container">
+      <div class="work-card" data-aos="fade-up">
+        <img src="assets/work1.png" alt="Work Image">
+        <h3>Quality Assurance Engineer</h3>
+        <p>Ensured high-quality software delivery through rigorous testing.</p>
       </div>
-      <!-- Project 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
-          </div>
-        </div>
+      <div class="work-card" data-aos="fade-up">
+        <img src="assets/work2.png" alt="Work Image">
+        <h3>Data Analyst Intern</h3>
+        <p>Analyzed business data and presented insights using dashboards.</p>
       </div>
-      <!-- Project 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
-          </div>
-        </div>
+      <div class="work-card" data-aos="fade-up">
+        <img src="assets/work3.png" alt="Work Image">
+        <h3>Freelance Developer</h3>
+        <p>Developed customized solutions for small-scale businesses.</p>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-<!-- Skills Section -->
-<section id="skills" class="skills-section bg-white" id="skills">
-  <div class="container">
-    <h2 class="text-center">Skills</h2>
-    <div class="row">
-      <!-- Skill 1 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/1.png" class="card-img-top" alt="Python">
-          <div class="card-body">
-            <h5 class="card-title">Python</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
+  <section id="projects" class="section">
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card" data-aos="fade-up">
+        <img src="assets/project1.png" alt="Project Image">
+        <h3>Predictive Analytics</h3>
+        <p>Developed a machine learning model to predict sales trends.</p>
+        <a href="https://github.com/yourproject">View on GitHub</a>
       </div>
-      <!-- Skill 2 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
-          <div class="card-body">
-            <h5 class="card-title">Data Visualization</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
+      <div class="project-card" data-aos="fade-up">
+        <img src="assets/project2.png" alt="Project Image">
+        <h3>Data Visualization</h3>
+        <p>Created interactive dashboards for business insights.</p>
+        <a href="https://github.com/yourproject">View on GitHub</a>
       </div>
-      <!-- Skill 3 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
-          <div class="card-body">
-            <h5 class="card-title">SQL</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
+      <div class="project-card" data-aos="fade-up">
+        <img src="assets/project3.png" alt="Project Image">
+        <h3>Customer Churn Prediction</h3>
+        <p>Built a predictive model to identify customers likely to churn.</p>
+        <a href="https://github.com/yourproject">View on GitHub</a>
       </div>
-      <!-- Skill 4 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
-          <div class="card-body">
-            <h5 class="card-title">Data Storytelling</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
+      <div class="project-card" data-aos="fade-up">
+        <img src="assets/project4.png" alt="Project Image">
+        <h3>Recommendation System</h3>
+        <p>Designed a system to recommend products based on user behavior.</p>
+        <a href="https://github.com/yourproject">View on GitHub</a>
+      </div>
+      <div class="project-card" data-aos="fade-up">
+        <img src="assets/project5.png" alt="Project Image">
+        <h3>Portfolio Website</h3>
+        <p>Built a personal portfolio website to showcase my skills.</p>
+        <a href="https://github.com/yourproject">View on GitHub</a>
+      </div>
+      <div class="project-card" data-aos="fade-up">
+        <img src="assets/project6.png" alt="Project Image">
+        <h3>Sentiment Analysis</h3>
+        <p>Developed a sentiment analysis tool using NLP techniques.</p>
+        <a href="https://github.com/yourproject">View on GitHub</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact Me Section -->
-<section id="contact" class="contact-section text-center text-white bg-dark">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <div class="row">
-      <div class="col-lg-6">
-        <p><i class="fas fa-envelope"></i> loremipsum@gmail.com</p>
-      </div>
-      <div class="col-lg-6">
-        <p><i class="fas fa-phone"></i> 415xxxxxxx</p>
-      </div>
+  <section id="resume" class="section">
+    <h2 data-aos="fade-up">Resume</h2>
+    <p data-aos="fade-up">Want to know more about my job and education? Download my resume to get the complete details.</p>
+    <a href="assets/your-resume.pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 data-aos="fade-up">Contact Me</h2>
+    <p data-aos="fade-up">Feel free to reach out to me through the following platforms:</p>
+    <div class="contact-links" data-aos="fade-up">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:youremail@example.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://github.com/yourprofile" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
     </div>
-    <div class="row">
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://linkedin.com/in/yourusername" target="_blank">
-          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
-          LinkedIn
-        </a>
-      </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://twitter.com/yourusername" target="_blank">
-          <img src="icons/twitter.png" alt="Twitter" class="social-icon">
-          Twitter
-        </a>
-      </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://github.com/yourusername" target="_blank">
-          <img src="icons/github.png" alt="GitHub" class="social-icon">
-          GitHub
-        </a>
-      </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://medium.com/@yourusername" target="_blank">
-          <img src="icons/medium.png" alt="Medium" class="social-icon">
-          Medium
-        </a>
-      </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://youtube.com/c/yourchannel" target="_blank">
-          <img src="icons/youtube.png" alt="YouTube" class="social-icon">
-          YouTube
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Sticky Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#home">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <footer>
+    <p>&copy; 2024 Ram Mopati. All rights reserved.</p>
+  </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // Animation duration in ms
+      offset: 120,   // Animation offset in px
+    });
 
-<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      });
+    });
+
+    document.querySelectorAll('.contact-link').forEach(link => {
+      link.addEventListener('mouseover', function () {
+        const tooltip = document.createElement('div');
+        tooltip.className = 'tooltip';
+        tooltip.textContent = this.textContent.trim();
+        document.body.appendChild(tooltip);
+        const rect = this.getBoundingClientRect();
+        tooltip.style.left = `${rect.left + rect.width / 2 - tooltip.offsetWidth / 2}px`;
+        tooltip.style.top = `${rect.top - 30}px`;
+
+        this.addEventListener('mouseleave', () => tooltip.remove());
+      });
+    });
+
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+      button.addEventListener('mouseenter', () => {
+        button.style.transform = 'scale(1.1)';
+        button.style.transition = 'transform 0.3s ease';
+      });
+      button.addEventListener('mouseleave', () => {
+        button.style.transform = 'scale(1)';
+      });
+    });
+  </script>
 </body>
 </html>

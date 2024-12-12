@@ -1,0 +1,246 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f4f6;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 0%;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffd700;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* About Section */
+  #about {
+    background: #f9f9f9;
+  }
+  
+  /* Project Containers */
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: #2575fc;
+    font-weight: bold;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Resume Section */
+  #resume {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    padding: 50px;
+    text-align: center;
+    color: #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  #resume h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  #resume p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  #resume a.btn {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  #resume a.btn:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    padding: 50px;
+    text-align: center;
+    color: #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  #contact h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  #contact p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .contact-link {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    transform: scale(1.1);
+    color: #ffd700;
+  }
+  
+  .contact-link i {
+    margin-right: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  footer .social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  footer .social a:hover {
+    color: #ffd700;
+  }
+  
+  /* Tooltip Styles */
+  .tooltip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
