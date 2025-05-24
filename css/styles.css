@@ -77,7 +77,6 @@ body {
   .about p {
     margin-bottom: 1.2rem;
   }
-  
   .work-container {
     display: flex;
     flex-direction: column;      /* Stack cards vertically */
