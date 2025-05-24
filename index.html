@@ -94,15 +94,15 @@
     #projects {
       background-color: #fffaf0; /* Light Yellow */
     }
-
-    .projects-container, .work-container {
+   
+    .projects-container {
       display: flex;
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
     }
 
-    .project-card, .work-card {
+    .project-card {
       background: white;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -112,12 +112,12 @@
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .project-card:hover, .work-card:hover {
+    .project-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
-    .project-card img, .work-card img {
+    .project-card img {
       max-width: 100%;
       border-radius: 5px;
       margin-bottom: 15px;
@@ -205,7 +205,7 @@
   <section id="work-experience" class="section">
     <h2 data-aos="fade-up">Work Experience</h2>
     <div class="work-container">
-      <div class="work-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="work-card" data-aos="fade-up" data-aos-delay="0">
         <img src="assets/work1.png" alt="Work Image">
         <h3>Software QA Engineer, </h3>
         <h4>Infosys Ltd, Banglore, India. </h4>
