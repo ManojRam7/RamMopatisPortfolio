@@ -62,9 +62,22 @@ body {
   }
   
   /* About Section */
-  #about {
-    background: #f9f9f9;
+   .about {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 1.05rem;
   }
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .about p {
+    margin-bottom: 1.2rem;
+  }
+  
   
   /* Project Containers */
   .projects-container {
@@ -75,7 +88,7 @@ body {
   }
   
   .project-card {
-    background: white;
+    background:#f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
