@@ -15,19 +15,20 @@ body {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
   }
-  /*
+  
   .profile-pic {
     width: 320px;
     height: 640px;
     border-radius: 1%;
-  }    */
+  }    
+    /*
   .profile-pic {
     width: 400px;
     height: 650px;
     border-radius: 1%;
     object-fit: cover;
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  }
+  }    */
   .navbar ul {
     list-style: none;
     margin: 0;
