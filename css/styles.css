@@ -167,20 +167,21 @@ body {
     text-decoration: underline;
   }        */
 
+  /*
   .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px 40px; /* row gap, column gap */
+    gap: 40px 40px; 
     max-width: 1200px;
     margin: 0 auto;
   }
   
   .project-card {
-    flex: 1 1 45%;         /* Grow, shrink, basis: 45% for 2 per row */
-    max-width: 48%;        /* Prevents overflow, keeps 2 per row */
-    min-width: 340px;      /* Responsive minimum */
-    background: #f9f9f9;
+    flex: 1 1 45%;         
+    max-width: 48%;        
+    min-width: 340px;      
+    background: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -198,7 +199,31 @@ body {
       min-width: 0;
       max-width: 100%;
     }
-  }
+  }        
+*/
+
+.projects-container {
+  display: flex;
+  flex-direction: column;   /* Stack cards vertically */
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-card {
+  width: 125%;              /* Full width */
+  max-width: 125%;
+  min-width: 0;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;       /* Less padding for less height */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 0;
+  font-size: 1rem;          /* Optional: slightly smaller text */
+}
+
   
   /* Resume Section */
   #resume {
