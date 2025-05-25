@@ -117,7 +117,7 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
   }
   
-  /* Project Containers */
+  /* Project Containers 
   .projects-container {
     display: flex;
     justify-content: center;
@@ -165,6 +165,39 @@ body {
   
   .project-card a:hover {
     text-decoration: underline;
+  }        */
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 40px; /* row gap, column gap */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    flex: 1 1 45%;         /* Grow, shrink, basis: 45% for 2 per row */
+    max-width: 48%;        /* Prevents overflow, keeps 2 per row */
+    min-width: 340px;      /* Responsive minimum */
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 900px) {
+    .project-card, .projects-container {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+    .project-card {
+      min-width: 0;
+      max-width: 100%;
+    }
   }
   
   /* Resume Section */
