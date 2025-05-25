@@ -78,27 +78,28 @@ body {
     margin-bottom: 1.2rem;
   }
   .work-container {
-  display: flex;
-  flex-direction: column;      /* Stack cards vertically */
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-
-.work-card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
-  padding: 48px 36px;
-  width: 100%;                /* Full width */
-  box-sizing: border-box;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1100px;      /* Increased from 900px */
+    margin: 0 auto;
+    padding: 60px 0;        /* Increased padding */
+  }
+  
+  .work-card {
+    background: #fff;
+    border-radius: 16px;    /* Slightly more rounded */
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10); /* Stronger shadow */
+    padding: 48px 36px;     /* Increased padding */
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.18rem;     /* Slightly larger text */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
   
   /* Project Containers */
   .projects-container {
