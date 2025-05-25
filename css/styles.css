@@ -24,7 +24,7 @@ body {
   .profile-pic {
     width: 400px;
     height: 650px;
-    border-radius: 50%;
+    border-radius: 1%;
     object-fit: cover;
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   }
