@@ -15,10 +15,10 @@ body {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
   }
-  
+  /*
   .profile-pic {
-    width: 320px;
-    height: 640px;
+    width: 400px;
+    height: 700px;
     border-radius: 1%;
   }    
     /*
@@ -29,6 +29,15 @@ body {
     object-fit: cover;
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   }    */
+  .profile-pic {
+    width: 400px;      /* Increase width as needed */
+    height: 700px;     /* Increase height as needed */
+    border-radius: 2%; /* Slightly rounded corners, or use 0% for sharp corners */
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+
   .navbar ul {
     list-style: none;
     margin: 0;
