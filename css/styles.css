@@ -17,10 +17,13 @@ body {
   }
   
   .profile-pic {
-    width: 80px;
-    height: 80px;
-    border-radius: 0%;
-  }
+    width: 180px;
+    height: 180px;
+    border-radius:50%;
+    object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
   
   .navbar ul {
     list-style: none;
@@ -78,27 +81,27 @@ body {
     margin-bottom: 1.2rem;
   }
   .work-container {
-    display: flex;
-    flex-direction: column;      /* Stack cards vertically */
-    gap: 40px;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 0;
-  }
-  
-  .work-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    padding: 32px 24px;
-    width: 100%;                /* Full width */
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
+  display: flex;
+  flex-direction: column;      /* Stack cards vertically */
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.work-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  width: 100%;                /* Full width */
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
   
   /* Project Containers */
   .projects-container {
