@@ -201,12 +201,12 @@ body {
     }
   }        
 */
-
+/*
 .projects-container {
   display: flex;
   flex-direction: column; 
- /*  justify-content: center;    
-  align-items: center;   Stack cards vertically */
+   justify-content: center;    
+  align-items: center;   Stack cards vertically 
   gap: 48px;
   max-width: 1400px;
   margin: 0 auto;
@@ -214,20 +214,43 @@ body {
 }
 
 .project-card {
-  width: 100%;              /* Full width */
+  width: 100%;              
   max-width: 100%;
   min-width: 0%;
   background: #f9f9f9;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   padding: 64px 48px;
-  display: flex;       /* Less padding for less height */
+  display: flex;        Less padding for less height 
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   margin-bottom: 0;
-  font-size: 1.35rem;          /* Optional: slightly smaller text */
+  font-size: 1.35rem;           Optional: slightly smaller text 
+}
+*/
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1400px;      /* Increased from 1100px */
+  margin: 0 auto;
+  padding: 80px 0;        /* Increased padding */
 }
 
+.project-card {
+  background: #fff;
+  border-radius: 20px;    /* More rounded */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12); /* Stronger shadow */
+  padding: 64px 48px;     /* Increased padding */
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.35rem;     /* Larger text */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
   
   /* Resume Section */
   #resume {
