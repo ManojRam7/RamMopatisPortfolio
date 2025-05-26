@@ -233,30 +233,64 @@
       <div class="project-card" data-aos="fade-up">
         <img src="assets/project1.png" alt="Project Image">
         <h3>Gemstone Price Prediction</h3>
-        <h4>ML Algorithm Used:Linear Regression</h4>
-        <p>The Gemstone Price Predictor is a machine learning project designed to estimate gemstone prices based on their characteristics such as carat, depth, table, dimensions, cut, color, and clarity. 
-          The project features a complete data pipeline, from data ingestion and preprocessing to advanced model training and deployment.
-        </p>
-        <p><strong>Project Overview:</strong></p>
-        <ul>
-          <li><strong>Data Pipeline:</strong>Cleans and transforms raw gemstone data, applying techniques like imputation, scaling, and categorical encoding</li>
-          <li><strong>Modeling:</strong> Utilizes advanced regression models, including CatBoost, XGBoost, and KNN, combined through a Voting Regressor to improve predictive accuracy. Hyperparameter tuning and model evaluation are performed to select the best ensemble.</li>
-          <li><strong>Deployment:</strong> The application is deployed on AWS Elastic Beanstalk with a REST API for integration and testing.</li>
-          <li><strong>Web Application:</strong> Provides an interactive Flask-based web interface where users can input gemstone features and instantly receive a price prediction.</li>
-          <li><strong>Explainability:</strong> Integrates LIME for model interpretation to help users understand the factors influencing predictions.</li>
-        </ul>
-      <p>This project demonstrates end-to-end machine learning skills, including data engineering, model development, API creation, cloud deployment, and model explainability.</p>
-        <p><strong>Tools:</strong> EDA, Visualization, Feature Engineering, Feature Scaling, Feature Selection, Data Preprocessing, Python Libraries, Machine Learning, AWS Cloud Deployement.</p>
+        
+        <h4><strong>Project Overview:</strong></h4>
+        <p>Developed a machine learning project designed to estimate gemstone prices based on their characteristics such as carat, depth, table, dimensions, cut, color, and clarity.The project features a complete data pipeline, from data ingestion and preprocessing to advanced model training and deployment.</p>
+
+      
+      <ul>
+        <h4><strong>Key Features:</strong></h4>
+        <li><strong>Data Ingestion:</strong> Utilizes Kaggle's Gemstone dataset, which includes various gemstone attributes and their corresponding prices.</li>
+        
+        <li><strong>Exploratory Data Analysis (EDA):</strong> Conducts thorough EDA to understand data distributions, relationships, and potential outliers, using visualizations like scatter plots, histograms, and box plots.</li>
+        
+        <li><strong>Feature Engineering:</strong> Implements feature engineering techniques to create new features, such as calculating volume from dimensions, and applies transformations to improve model performance.</li>
+        
+        <li><strong>Data Preprocessing:</strong> Handles missing values, scales numerical features, and encodes categorical variables to prepare the dataset for modeling.</li>
+        
+        <li><strong>Model Training:</strong> Employs a variety of regression algorithms, including CatBoost, XGBoost, and KNN, to predict gemstone prices. These models are combined using a Voting Regressor to enhance accuracy.</li>
+        
+        <li><strong>Hyperparameter Tuning:</strong> Utilizes GridSearchCV to optimize model parameters, ensuring the best performance for the ensemble model.</li>
+        
+        <li><strong>Model Evaluation:</strong> Evaluates model performance using metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared, ensuring robust predictions.</li>
+
+        <li><strong>Data Pipeline:</strong> Cleans and transforms raw gemstone data, applying techniques like imputation, scaling, and categorical encoding.</li>
+          
+        <li><strong>Modeling:</strong> Utilizes advanced regression models, including CatBoost, XGBoost, and KNN, combined through a Voting Regressor to improve predictive accuracy. Hyperparameter tuning and model evaluation are performed to select the best ensemble.</li>
+          
+        <li><strong>Deployment:</strong> The application is deployed on AWS Elastic Beanstalk with a REST API for integration and testing.</li>
+          
+        <li><strong>Web Application:</strong> Provides an interactive Flask-based web interface where users can input gemstone features and instantly receive a price prediction.</li>
+          
+        <li><strong>Explainability:</strong> Integrates LIME for model interpretation to help users understand the factors influencing predictions.</li>
+      </ul>  
+      
+        <p><strong>Tools:</strong> EDA, Visualization, Probability&Statistics, Feature Engineering, Feature Scaling, Feature Selection, Data Preprocessing, Python Libraries, Machine Learning, AWS Cloud Deployement.</p>
         <p><strong>Accuracy:</strong> 98%</p>   
         <a href="https://github.com/ManojRam7/GEMSTONES_PRICE_PREDICTOR">View on GitHub</a>
       </div>
       <div class="project-card" data-aos="fade-up">
         <img src="assets/project2.png" alt="Project Image">
-        <h3>House Price Prediction</h3>
-        <p>Developed a machine learning model to predict House Price sales trends.</p>
-        <p>Machine Learning Algorithm Used:Linear Regression</p>
-        <p>Tools:Data Preprocessing,Python Libraries,Machine Learning,AWS</p>
-        <p>Accuracy:99%</p>
+        <h3>Boston House Price Prediction</h3>
+        <h4><strong>Project Overview:</strong></h4>
+        <p>Developed a machine learning web application designed to estimate house prices in the Boston area based on multiple property features. Leveraging regression techniques and an ensemble of advanced models (including CatBoost, XGBoost, and KNN), this project guides users through predicting home values by inputting relevant attributes such as crime rate, number of rooms, tax rate, and more.</p>
+        <ul>
+          <h4><strong>Key Features:</strong></h4>
+          <li><strong>Data Ingestion:</strong> Loads and splits real-world housing data for training and testing.</li>
+          <li><strong>Exploratory Data Analysis (EDA):</strong> Conducts thorough EDA to understand data distributions, relationships, and potential outliers, using visualizations like scatter plots, histograms, and box plots.</li>
+          <li><strong>Feature Engineering:</strong> Implements feature engineering techniques to create new features and applies transformations to improve model performance.</li>
+          <li><strong>Data Preprocessing:</strong> Handles missing values, scales numerical features, and encodes categorical variables to prepare the dataset for modeling.</li>
+          <li><strong>Model Training:</strong> Employs a variety of regression algorithms, including CatBoost, XGBoost, and KNN, to predict house prices. These models are combined using a Voting Regressor to enhance accuracy.</li>
+          <li><strong>Hyperparameter Tuning:</strong> Utilizes GridSearchCV to optimize model parameters, ensuring the best performance for the ensemble model.</li>
+          <li><strong>Model Evaluation:</strong> Evaluates model performance using metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared, ensuring robust predictions.</li>
+          <li><strong>Web Application:</strong> Features both Flask and Streamlit interfaces, allowing users to input data via a user-friendly form and instantly receive price predictions</li>
+          <li><strong>Model Serialization:</strong> The trained models and scalers are saved as pickle files for deployment.</li>
+          <li><strong>API Integration:</strong> The Flask app exposes a /predict_api endpoint for programmatic prediction.</li>
+          <li><strong>Comprehensive User Input:</strong> Supports detailed input for all relevant property features, ensuring accurate and personalized predictions.</li>
+        </ul>
+
+        <p><strong>Tools:</strong>Data Ingestion, EDA, Data Preprocessing, Visualization, Python Libraries, Machine Learning, Streamlit Community Cloud.</p>
+        <p><strong>Accuracy:</strong> 99%</p>
         <a href="https://github.com/ManojRam7/HOUSE_PRICE_ANALYSIS">View on GitHub</a>
       </div>
       <div class="project-card" data-aos="fade-up">
