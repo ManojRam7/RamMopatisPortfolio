@@ -388,4 +388,29 @@ body {
   .project-card li {
     text-align: left;
   }
+
+
+  .project-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .project-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2575fc;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+  }
+  
+  .project-btn:hover {
+    background: #6a11cb;
+    transform: translateY(-2px) scale(1.05);
+  }
   
