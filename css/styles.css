@@ -456,3 +456,48 @@ body {
   .project-btn:hover {
     background: #2575fc;
   }
+
+/*
+  /* Example CSS for project card 
+.project-card {
+  max-width: 350px;
+  min-height: 500px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+  padding: 32px 24px;
+  margin: 16px 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card img {
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+.tech-stack span {
+  background: #e6f0fa;
+  color: #2575fc;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-right: 4px;
+  font-size: 0.9em;
+}
+.project-btn {
+  background: #091d4b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  margin: 8px 4px 0 0;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.project-btn:hover {
+  background: #2575fc;
+}
