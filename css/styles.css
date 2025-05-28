@@ -93,30 +93,55 @@ body {
   .about p {
     margin-bottom: 1.2rem;
   }
+
+
   .work-container {
     display: flex;
     flex-direction: column;
     gap: 48px;
-    max-width: 1400px;      /* Increased from 1100px */
+    max-width: 1400px;       
     margin: 0 auto;
-    padding: 80px 0;        /* Increased padding */
+    padding: 80px 0;        
   }
-  
+  .work-card img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 900px) {
+    .work-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .work-card {
+      max-width: 95vw;
+      min-width: 0;
+      width: 100%;
+    }
+  }
+
   .work-card {
     background: #fff;
-    border-radius: 20px;    /* More rounded */
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12); /* Stronger shadow */
-    padding: 64px 48px;     /* Increased padding */
+    border-radius: 20px;    
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    padding: 64px 48px;     
     width: 100%;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: 1.35rem;     /* Larger text */
+    font-size: 1.35rem;     
     transition: transform 0.3s, box-shadow 0.3s;
   }
+/* Add this inside your <style> tag or in your CSS file */
+
   
+
+
+
   /* Project Containers 
   .projects-container {
     display: flex;
@@ -501,3 +526,124 @@ body {
 .project-btn:hover {
   background: #2575fc;
 }
+
+
+
+.work-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.work-card img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 18px;
+}
+
+.work-card h3, .work-card h4 {
+  margin: 8px 0 4px 0;
+}
+
+.work-summary {
+  font-size: 1.05rem;
+  color: #333;
+  margin: 12px 0 18px 0;
+}
+
+.work-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.work-bullets li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.work-bullets i {
+  color: #2575fc;
+  margin-right: 10px;
+  min-width: 20px;
+  font-size: 1.1em;
+  margin-top: 2px;
+}
+
+.work-tools {
+  font-size: 0.98rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.work-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 420px; 
+  min-width: 320px;
+  flex: 1 1 350px;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.work-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 50px;
+  max-width: 400px;
+  min-width: 320px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-card img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+*/
+
+
