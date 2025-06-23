@@ -200,7 +200,7 @@
     </p>
 
   </section>
-
+    <!-- --------------------------------------------------------------  -->
   <section id="work-experience" class="section">
     <h2 data-aos="fade-up">Work Experience</h2>
     <div class="work-container">
@@ -277,51 +277,118 @@
     -->
     </div>
   </section>
+    <!-- --------------------------------------------------------------  -->
 
   <section id="projects" class="section">
     <h2 data-aos="fade-up">Projects</h2>
     <div class="projects-container">
       <div class="project-card" data-aos="fade-up">
-        <img src="assets/project3.png" alt="Project Image">
+        <img src="assets/project0.png" alt="Project Image">
 
-        <h3>Potato Disease Classifier</h3>
+        <h3>Enterprise Customer Churn or Retention Analytics Platform</h3>
         <h4><strong>Business Impact Summary:</strong></h4>
-        <p>Developed a deep learning application that classifies potato leaf diseases from image data to assist farmers and agricultural professionals with early detection and effective management. Using advanced image classification techniques and neural networks, this project streamlines the process of identifying common potato diseases (such as early blight and late blight) from uploaded images, providing fast and accurate results for practical field use.</p>
+        <p>Developed a production-ready machine learning web application that predicts customer churn for telecom companies with 99%+ accuracy. Built an end-to-end MLOps platform featuring real-time predictions, automated deployment, and comprehensive data analysis to help businesses proactively identify at-risk customers and implement retention strategies. The application combines advanced machine learning algorithms with modern web technologies and cloud infrastructure for scalable, reliable performance.</p>
         <ul>
-          <h4><strong>Technical Features:</strong></h4>
-          <li><strong>Image Data Ingestion:</strong> Loads, preprocesses, and augments a real-world dataset of potato leaf images for robust model training and testing.</li> 
-          
-          <li><strong>Dataset Preparation:</strong> Utilizes a comprehensive dataset of potato leaf images, including healthy and diseased leaves, to train the model.</li>
-          
-          <li><strong>Exploratory Data Analysis (EDA):</strong> Performs EDA on image datasets to understand class distributions and visualize disease patterns.</li> 
-          
-          <li><strong>Image Preprocessing:</strong> Applies transformations such as resizing, normalization, and augmentation to enhance model performance.</li>
-          
-          <li><strong>Model Training:</strong> Utilizes state-of-the-art convolutional neural networks (CNNs) to classify images into healthy or disease categories.</li> 
-          
-          <li><strong>Performance Visualization:</strong> Visualizes training and validation accuracy/loss curves as well as confusion matrices to evaluate model effectiveness.</li> 
-          
-          <li><strong>Interactive Notebooks:</strong> Jupyter Notebooks provide step-by-step documentation, code, and visualizations for transparency and reproducibility.</li> 
-          
-          <li><strong>Result Interpretation:</strong> Offers clear output of predicted disease class along with confidence scores for each prediction.</li> 
-          
-          <li><strong>Export and Deployment:</strong> Supports exporting trained models for deployment in real-world or mobile applications.</li> 
-          <li><strong>Performance:</strong> Achieved accuracy of 94%.</li>
-        </ul>
+        <h4><strong>Technical Features:</strong></h4>
+        <li><strong>Data Processing Pipeline:</strong> Implements comprehensive data preprocessing with custom transformers for categorical encoding, numerical scaling, and feature engineering on 440K+ customer records.</li>
+  
+        <li><strong>Machine Learning Models:</strong> Trained and compared multiple algorithms including Random Forest, XGBoost, LightGBM, and SVM, achieving consistent 99%+ ROC-AUC scores.</li>
+  
+        <li><strong>Exploratory Data Analysis (EDA):</strong> Conducted thorough data analysis using Sweetviz and ydata-profiling to understand customer behavior patterns and feature relationships.</li>
+  
+        <li><strong>Model Optimization:</strong> Applied hyperparameter tuning with GridSearchCV and cross-validation techniques to maximize model performance and reliability.</li>
+  
+        <li><strong>REST API Development:</strong> Built FastAPI backend with Pydantic models for data validation, supporting both single and batch predictions with comprehensive error handling.</li>
+        
+        <li><strong>API Testing & Validation:</strong> Performed comprehensive endpoint testing using Postman to validate API functionality, request/response schemas, and error handling scenarios.</li>
+        
+        <li><strong>Web Interface:</strong> Created responsive HTML frontend with Jinja2 templating for real-time customer churn predictions through user-friendly forms.</li>
+  
+        <li><strong>Docker Containerization:</strong> Containerized application with optimized Dockerfile and automated Docker image builds pushed to Docker Hub registry for version control and distribution.</li>
+  
+        <li><strong>Azure Cloud Deployment:</strong> Deployed containerized application on Azure Container Apps pulling from Docker Hub with auto-scaling and managed infrastructure.</li>
+  
+        <li><strong>CI/CD Pipeline:</strong> Implemented GitHub Actions workflow for automated testing, Docker image building, registry publishing, and seamless cloud deployment.</li>
+  
+        <li><strong>Testing Framework:</strong> Comprehensive test suite using pytest covering API endpoints and data preprocessing functionality.</li>
+        
+        <li><strong>Interactive Development:</strong> Jupyter Notebooks provide detailed model training, evaluation, and comparison with visualizations for transparency.</li>
+  
+        <li><strong>Production Monitoring:</strong> Health check endpoints and model reload functionality for production maintenance and updates.</li>
+  
+        <li><strong>Performance:</strong> Achieved 99.99% ROC-AUC score with Random Forest model on large-scale telecom dataset.</li>
+</ul>
 
-        <p><strong>Tools:</strong>Jupyter Notebook, Python, TensorFlow/Keras (or PyTorch), Data Visualization, OpenCV, NumPy, Matplotlib/Seaborn, Machine Learning, Deep Learning, Streamlit Community Cloud. </p>
+<p><strong>Tools:</strong> Python, FastAPI, Scikit-learn, XGBoost, LightGBM, Pandas, NumPy, Docker, Docker Hub, Azure Container App, CI/CD Pipelines, GitHub Actions, Postman, Jupyter Notebook, Matplotlib, Seaborn, Pytest, Jinja2, Pydantic, Git, HTML.</p>
         
         <div class="project-links">
-          <a href="https://potatodisease-classifier-app.streamlit.app" target="_blank" class="project-btn">Live Demo</a>
-          <a href="https://github.com/ManojRam7/PotatoDisease_Classifier" target="_blank" class="project-btn">Source Code</a>
+          <a href="https://telecomchurnazurewebapp-bjb4f4drcqewc5e2.canadacentral-01.azurewebsites.net" target="_blank" class="project-btn">AZURE APP</a>
+          <a href="https://github.com/ManojRam7/CustomerChurn_Prediction" target="_blank" class="project-btn">Source Code</a>
         </div>
       </div>
 
 
+      <!-- --------------------------------------------------------------  -->
+
+      <div class="project-card" data-aos="fade-up">
+        <img src="assets/project3.png" alt="Project Image">
+
+        <h3>Agricultural Disease Detection System</h3>
+        <h4><strong>Business Impact Summary:</strong></h4>
+        <p>
+    Developed a robust deep learning application to classify potato leaf diseases from image data, empowering farmers and agricultural professionals with early detection and effective disease management. This project leverages advanced computer vision and neural network techniques to streamline the identification of common potato diseases (such as early blight and late blight) from uploaded images, providing fast and accurate results for practical field use.
+  </p>
+        <ul>
+          <h4><strong>Technical Features:</strong></h4>
+          
+          <li><strong>Comprehensive Image Data Pipeline:</strong> Loaded, preprocessed, and augmented a large, real-world dataset of potato leaf images (healthy and diseased) to ensure robust model training and testing.</li> 
+          
+          <li><strong>Exploratory Data Analysis (EDA):</strong> Performed in-depth EDA to understand class distributions, visualize disease patterns, and guide model development.</li>
+          
+          <li><strong>Image Preprocessing:</strong> Applied transformations such as resizing, normalization, and augmentation (rotation, flipping, etc.) to enhance model generalization and performance.</li> 
+          
+          <li><strong>Deep Learning Model Training:</strong> Built and trained state-of-the-art convolutional neural networks (CNNs) using TensorFlow and Keras, achieving high classification accuracy (94%) on test data.</li>
+          
+          <li><strong>Performance Visualization:</strong> Visualized training/validation accuracy and loss curves, as well as confusion matrices, to evaluate and interpret model effectiveness.</li> 
+          
+          <li><strong>Interactive Notebooks:</strong> Documented the entire workflow in Jupyter Notebooks, including code, visualizations, and step-by-step explanations for transparency and reproducibility.</li> 
+          <li>
+          <strong>Result Interpretation:</strong> Provided clear output of predicted disease class along with confidence scores for each prediction, aiding user decision-making.
+          </li>
+          <li>
+          <strong>Web Application Deployment:</strong> Deployed the trained model as an interactive web application using Streamlit, allowing users to upload images and receive instant predictions.
+          </li>
+          <li>
+          <strong>API Integration:</strong> Developed a FastAPI backend to serve model predictions via RESTful endpoints, supporting scalable and cloud-ready deployment.
+          </li>
+          <li>
+          <strong>Export and Real-World Deployment:</strong> Supported exporting trained models for integration into real-world or mobile applications, enabling practical field use.
+          </li>
+          <li>
+          <strong>Cloud & Containerization Ready:</strong> Project is structured for easy Dockerization and deployment to cloud platforms such as Azure, AWS, or GCP.
+          </li>
+          <li>
+          <strong>Code Quality & Best Practices:</strong> Utilized modular code structure, requirements files, and version control for maintainability and collaboration.
+          </li>
+          <li>
+          <strong>Reproducibility & Documentation:</strong> Provided detailed documentation and Jupyter Notebooks for transparency, reproducibility, and ease of understanding.
+          </li>
+          
+
+        <p><strong>Tools:</strong>Python, TensorFlow, Keras, OpenCV, Numpy, Pandas, Scipy, Matplotlib, Seaborn, Scikit-learn, Streamlit, FastAPI, Uvicorn, Jupyter Notebook, Request, Threading, Visualization, Deep Learning, CNN, Streamlit Community Cloud. </p>
+        
+        <div class="project-links">
+          <a href="https://potatodisease-classifier-app.streamlit.app" target="_blank" class="project-btn">STREAMLIT APP</a>
+          <a href="https://github.com/ManojRam7/PotatoDisease_Classifier" target="_blank" class="project-btn">Source Code</a>
+        </div>
+      </div>
+
+     <!-- --------------------------------------------------------------  -->
+
 
       <div class="project-card" data-aos="fade-up">
         <img src="assets/project6.png" alt="Project Image">
-        <h3>Loan Approval Prediction</h3>
+        <h3>Financial Risk Assessment & Credit Scoring Platform</h3>
         <h4><strong>Business Impact Summary:</strong></h4>
         <p>Developed a machine learning application that predicts loan approval outcomes based on applicant data, assisting financial institutions with risk assessment and streamlined decision-making. Leveraging advanced data processing techniques and predictive modeling, this project automates the evaluation of loan applications using key financial and demographic features, providing rapid and reliable approval predictions for practical business use.</p>
         <ul>
@@ -349,15 +416,17 @@
         <p><strong>Tools:</strong>Jupyter Notebook, Python, Scikit-Learn, NumPy, Pandas, Matplotlib/Seaborn, Data Visualization, Machine Learning, Streamlit Community Cloud. </p>
         
         <div class="project-links">
-          <a href="https://loanapprovalprediction-app.streamlit.app" target="_blank" class="project-btn">Live Demo</a>
+          <a href="https://loanapprovalprediction-app.streamlit.app" target="_blank" class="project-btn">STREAMLIT APP</a>
           <a href="https://github.com/ManojRam7/LoanApproval_Prediction" target="_blank" class="project-btn">Source Code</a>
         </div>
       </div>
 
 
+     <!-- --------------------------------------------------------------  -->
+
       <div class="project-card" data-aos="fade-up">
         <img src="assets/project1.png" alt="Project Image">
-        <h3>Gemstone Price Prediction</h3>
+        <h3>Luxury Stones Market Valuation Engine</h3>
         
         <h4><strong>Business Impact Summary:</strong></h4>
         <p>Developed a machine learning project designed to estimate gemstone prices based on their characteristics such as carat, depth, table, dimensions, cut, color, and clarity.The project features a complete data pipeline, from data ingestion and preprocessing to advanced model training and deployment.</p>
@@ -399,9 +468,11 @@
       </div>
       </div>
 
+      <!-- --------------------------------------------------------------  -->
+
       <div class="project-card" data-aos="fade-up">
         <img src="assets/project2.png" alt="Project Image">
-        <h3>Boston House Price Prediction</h3>
+        <h3>Real Estate Investment Analytics System</h3>
         <h4><strong>Business Impact Summary:</strong></h4>
         <p>Developed a machine learning web application designed to estimate house prices in the Boston area based on multiple property features. Leveraging regression techniques and an ensemble of advanced models (including CatBoost, XGBoost, and KNN), this project guides users through predicting home values by inputting relevant attributes such as crime rate, number of rooms, tax rate, and more.</p>
         <ul>
@@ -423,16 +494,18 @@
         <p><strong>Tools:</strong>Data Ingestion, EDA, Data Preprocessing, Visualization, Python Libraries, Machine Learning, Streamlit Community Cloud.</p>
         
         <div class="project-links">
-          <a href="https://boston-houseprice-predictor.streamlit.app" target="_blank" class="project-btn">Live Demo</a>
+          <a href="https://boston-houseprice-predictor.streamlit.app" target="_blank" class="project-btn">STREAMLIT APP</a>
           <a href="https://github.com/ManojRam7/BostonHousePrice_Predictor" target="_blank" class="project-btn">Source Code</a>
         </div>
       </div>
 
+
+      <!-- --------------------------------------------------------------  -->
       
       
       <div class="project-card" data-aos="fade-up">
         <img src="assets/project4.png" alt="Project Image">
-        <h3>Breast Cancer Prediction</h3>
+        <h3>Clinical Decision Support System for Cancer Screening</h3>
         <h4><strong>Business Impact Summary:</strong></h4>
         <p>Developed a deep learning application that predicts breast cancer from medical data, assisting healthcare professionals with early diagnosis and effective patient management. Leveraging advanced machine learning techniques and neural networks, this project streamlines the process of identifying the likelihood of breast cancer based on clinical features, providing rapid and accurate predictions for practical healthcare use.</p>
         <ul>
@@ -461,16 +534,18 @@
         <p><strong>Tools:</strong>Jupyter Notebook, Python, TensorFlow/Keras (or PyTorch), Scikit-Learn, Data Visualization, NumPy, Matplotlib/Seaborn, Machine Learning, Deep Learning, Streamlit Community Cloud.</p>
         
         <div class="project-links">
-          <a href="https://breastcancerpredictor-app.streamlit.app" target="_blank" class="project-btn">Live Demo</a>
+          <a href="https://breastcancerpredictor-app.streamlit.app" target="_blank" class="project-btn">STREAMLIT APP</a>
           <a href="https://github.com/ManojRam7/BreastCancer_Predictor" target="_blank" class="project-btn">Source Code</a>
         </div>
       </div>
 
 
+      <!-- --------------------------------------------------------------  -->
+
 
       <div class="project-card" data-aos="fade-up">
         <img src="assets/project7.png" alt="Project Image">
-        <h3>Student Performance Predictor</h3>
+        <h3>Educational Analytics & Performance Optimization System</h3>
         <h4><strong>Business Impact Summary:</strong></h4>
         <p>Developed a machine learning-based application to predict student academic performance, enabling educators and institutions to identify at-risk students early and implement targeted interventions. By leveraging advanced data analytics and predictive modeling, this project streamlines the evaluation of student outcomes based on a variety of academic and socio-demographic factors, facilitating data-driven decisions for improved educational management and student success.</p>      
         <ul> <h4><strong>Technical Features:</strong></h4> 
@@ -493,23 +568,9 @@
         </div>
       </div>
 
+     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <!--
       <div class="project-card" data-aos="fade-up">
         <img src="assets/project5.png" alt="Project Image">
         <h3>Portfolio</h3>
@@ -528,16 +589,20 @@
         <div class="project-links">
         <a href="https://github.com/ManojRam7/RamMopatisPortfolio" target="_blank" class="project-btn">Project Repository</a>        
       </div>
-
-      
+      -->
     </div>
   </section>
+
+      
+
 
   <section id="resume" class="section">
     <h2 data-aos="fade-up">Resume</h2>
     <p data-aos="fade-up">Want to know more about my job and education? Download my resume to get the complete details.</p>
     <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
   </section>
+
+    <!-- --------------------------------------------------------------  -->
 
   <section id="contact" class="section">
     <h2 data-aos="fade-up">Contact Me</h2>
@@ -550,9 +615,17 @@
     </div>
   </section>
 
+    <!-- --------------------------------------------------------------  -->
+
   <footer>
     <p>&copy; 2024 Ram Mopati. All rights reserved.</p>
   </footer>
+   
+    <!-- --------------------------------------------------------------  -->
+  <!-- Scripts -->
+   -- Scripts for AOS and smooth scrolling -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
