@@ -5,15 +5,6 @@ AOS.init({
   });
   
   // Smooth Scrolling for Navigation
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    });
-  });
   
   // Tooltip for Contact Icons
   document.querySelectorAll('.contact-link').forEach(link => {
@@ -33,6 +24,35 @@ AOS.init({
   });
   
   // Button Hover Animation
+// Dark Mode Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtn = document.createElement('button');
+  toggleBtn.textContent = '🌙 Dark Mode';
+  toggleBtn.className = 'btn';
+  toggleBtn.style.position = 'fixed';
+  toggleBtn.style.bottom = '32px';
+  toggleBtn.style.right = '32px';
+  toggleBtn.style.zIndex = '1000';
+  toggleBtn.style.background = '#222';
+  toggleBtn.style.color = '#ffd700';
+  toggleBtn.style.fontWeight = 'bold';
+  toggleBtn.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+  document.body.appendChild(toggleBtn);
+
+  // Check localStorage for dark mode preference
+  let darkMode = localStorage.getItem('darkMode') === 'true';
+  if (darkMode) {
+    document.body.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️ Light Mode';
+  }
+
+  toggleBtn.addEventListener('click', function() {
+    darkMode = !darkMode;
+    document.body.classList.toggle('dark-mode', darkMode);
+    toggleBtn.textContent = darkMode ? '☀️ Light Mode' : '🌙 Dark Mode';
+    localStorage.setItem('darkMode', darkMode);
+  });
+});
   const buttons = document.querySelectorAll('.btn');
   buttons.forEach(button => {
     button.addEventListener('mouseenter', () => {

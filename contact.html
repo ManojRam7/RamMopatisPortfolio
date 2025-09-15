@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Ram Mopati Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header" style="background: linear-gradient(to right, #091d4b, #091e0e); color: white; padding: 20px 0;">
+    <div style="overflow:hidden;white-space:nowrap;">
+      <span style="display:inline-block;animation:scrollName 8s linear infinite;font-size:2rem;font-weight:700;letter-spacing:2px;">Ram Mopati &nbsp; Ram Mopati &nbsp; Ram Mopati &nbsp; Ram Mopati &nbsp;</span>
+    </div>
+    <style>
+      @keyframes scrollName {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+    </style>
+  </header>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:32px 0 0 0;">
+  <a href="home.html" class="btn" aria-label="Go to Home page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">Home</a>
+  <a href="about.html" class="btn" aria-label="Go to About Me page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">About Me</a>
+  <a href="work-experience.html" class="btn" aria-label="Go to Work Experience page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">Work Experience</a>
+  <a href="projects.html" class="btn" aria-label="Go to Freelance Projects page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">Freelance Projects</a>
+  <a href="resume.html" class="btn" aria-label="Go to Resume page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">My Resume</a>
+  <a href="contact.html" class="btn" aria-label="Go to Contact Me page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">Contact Me</a>
+  </div>
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me through the following platforms or send a direct message below:</p>
+    <div class="contact-links">
+  <a href="https://www.linkedin.com/in/manojrammopati202095187/" target="_blank" class="contact-link" title="LinkedIn" aria-label="LinkedIn profile of ManojRam Mopati"><i class="fab fa-linkedin"></i></a>
+  <a href="mailto:manojrammopati@gmail.com" class="contact-link" title="Gmail" aria-label="Send email to manojrammopati@gmail.com"><i class="fas fa-envelope"></i></a>
+  <a href="mailto:manojrammopati@outlook.com" class="contact-link" title="Outlook" aria-label="Send email to manojrammopati@outlook.com"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/ManojRam7" target="_blank" class="contact-link" title="GitHub" aria-label="GitHub profile of ManojRam Mopati"><i class="fab fa-github"></i></a>
+    </div>
+    <form action="https://formspree.io/f/xwkzqjzq" method="POST" style="margin:32px auto 0 auto;max-width:420px;background:rgba(255,255,255,0.13);padding:32px 24px;border-radius:18px;box-shadow:0 2px 12px rgba(36,36,36,0.10);display:flex;flex-direction:column;gap:18px;">
+      <label for="name" style="color:#ffd700;font-weight:600;">Your Name</label>
+      <input type="text" id="name" name="name" required style="padding:10px;border-radius:8px;border:none;font-size:1rem;">
+      <label for="email" style="color:#ffd700;font-weight:600;">Your Email</label>
+      <input type="email" id="email" name="email" required style="padding:10px;border-radius:8px;border:none;font-size:1rem;">
+      <label for="message" style="color:#ffd700;font-weight:600;">Message</label>
+      <textarea id="message" name="message" rows="4" required style="padding:10px;border-radius:8px;border:none;font-size:1rem;"></textarea>
+      <button type="submit" class="btn" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:12px 32px;border-radius:32px;text-decoration:none;font-size:1.08rem;box-shadow:0 4px 16px rgba(36,36,36,0.10);margin-top:8px;transition:background 0.3s;">Send Message <i class="fas fa-paper-plane" style="margin-left:8px;"></i></button>
+    </form>
+  </section>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+<div style="width:100%;display:flex;justify-content:center;margin-top:40px;">
+  <div style="background:#111;color:#fff;padding:16px 32px;border-radius:12px;font-size:1rem;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.10);width:fit-content;">
+    &copy; 2024 Ram Mopati. All rights reserved.
+  </div>
+</div>
+</html>
