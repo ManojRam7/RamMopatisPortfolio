@@ -1,3 +1,89 @@
+/* Responsive Design for Mobile */
+@media (max-width: 700px) {
+  .hero-card {
+    max-width: 98vw;
+    padding: 28px 6vw 24px 6vw;
+    border-radius: 22px;
+  }
+  .hero-photo {
+    width: 90px;
+    height: 90px;
+    border-width: 3px;
+    margin-bottom: 14px;
+  }
+  .hero-name-highlight {
+    font-size: 1.3rem;
+    padding: 6px 12vw;
+    border-radius: 12px;
+  }
+  .profile-section .intro-text {
+    padding: 18px 4vw;
+    min-height: 40vh;
+    font-size: 1.05rem;
+    border-radius: 12px;
+  }
+  .profile-section .intro-text > div > div > div[style*="background:rgba(255,255,255,0.13)"] {
+    max-width: 96vw !important;
+    min-height: 120px;
+    font-size: 0.98rem;
+    border-radius: 14px !important;
+    padding: 16px 4vw !important;
+  }
+  .intro-main {
+    font-size: 1.3rem;
+  }
+  .intro-sub {
+    font-size: 1.1rem;
+  }
+  .intro-desc {
+    font-size: 1rem;
+  }
+  .zoom-welcome {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-card {
+    padding: 16px 2vw 12px 2vw;
+    border-radius: 12px;
+  }
+  .hero-photo {
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+    margin-bottom: 8px;
+  }
+  .hero-name-highlight {
+    font-size: 1.02rem;
+    padding: 4px 6vw;
+    border-radius: 8px;
+  }
+  .profile-section .intro-text {
+    padding: 8px 2vw;
+    min-height: 20vh;
+    font-size: 0.98rem;
+    border-radius: 8px;
+  }
+  .profile-section .intro-text > div > div > div[style*="background:rgba(255,255,255,0.13)"] {
+    max-width: 98vw !important;
+    min-height: 80px;
+    font-size: 0.92rem;
+    border-radius: 8px !important;
+    padding: 8px 2vw !important;
+  }
+  .intro-main {
+    font-size: 1.05rem;
+  }
+  .intro-sub {
+    font-size: 0.98rem;
+  }
+  .intro-desc {
+    font-size: 0.92rem;
+  }
+  .zoom-welcome {
+    font-size: 0.98rem;
+  }
+}
 /* Single Hero Card Banner Animation */
 .scroll-banner {
   overflow: hidden;
