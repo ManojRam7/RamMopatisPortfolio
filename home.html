@@ -9,17 +9,12 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header" style="background: linear-gradient(to right, #091d4b, #091e0e); color: white; padding: 20px 0;">
-    <div style="overflow:hidden;white-space:nowrap;">
-  <span style="display:inline-block;animation:scrollName 16s linear infinite;font-size:2rem;font-weight:700;letter-spacing:2px;">Manoj Ram Mopati &nbsp; Manoj Ram Mopati &nbsp; Manoj Ram Mopati &nbsp; Manoj Ram Mopati &nbsp;</span>
-    </div>
-    <style>
-      @keyframes scrollName {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
-      }
-    </style>
-  </header>
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:999;"></canvas>
+  <div class="hero-card">
+    <img src="assets/profilepic.png" alt="Manoj Ram Mopati" class="hero-photo">
+    <span class="hero-name-highlight">Manoj Ram Mopati</span>
+  </div>
   <section class="profile-section">
   <div class="intro-text" style="
       display: flex;
@@ -39,11 +34,10 @@
       <div style="margin-bottom:18px;">
         <span style="display:inline-block;background:rgba(0,0,0,0.18);color:#ffd700;padding:8px 24px;border-radius:16px;font-size:1.25rem;font-weight:600;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.10);">Delivering Data-Driven Solutions for Business Impact</span>
       </div>
-      <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 20px; letter-spacing: 2px;">👋 Welcome to My Portfolio!</h1>
-  <a href="assets/resume.pdf" download class="btn" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:12px 32px;border-radius:32px;text-decoration:none;font-size:1.08rem;box-shadow:0 4px 16px rgba(36,36,36,0.10);margin-bottom:18px;transition:background 0.3s;display:inline-block;">Download My Resume <i class="fas fa-download" style="margin-left:8px;"></i></a>
-      <h2 style="font-size: 2rem; font-weight: 400; margin-bottom: 10px;">Hi, I'm <span style='color:#ffd700;font-weight:700;'>ManojRam Mopati</span></h2>
-      <h3 style="font-size: 1.3rem; font-weight: 300; margin-bottom: 20px;">an Aspiring Data Scientist</h3>
-  <p style="font-size: 1.25rem; margin-bottom: 20px;">currently pursuing my <span style='color:#ffd700;font-weight:700;font-size:1.6rem;text-shadow:0 2px 12px rgba(36,36,36,0.18);'>Masters in Data Science</span> at <span style='color:#ffd700;font-weight:700;font-size:1.4rem;text-shadow:0 2px 12px rgba(36,36,36,0.18);'>Coventry University, United Kingdom</span><span style='color:#ffd700;font-weight:600;'></span></p>
+      <h1 class="zoom-welcome">👋 Welcome to My Portfolio!</h1>
+    <h2 class="intro-main" style="font-size: 2.6rem; font-weight: 700; margin-bottom: 12px; font-family: 'Poppins', 'Montserrat', sans-serif; letter-spacing:1.5px;">Hi, I'm <span class="intro-highlight">ManojRam Mopati</span></h2>
+    <h3 class="intro-sub" style="font-size: 1.7rem; font-weight: 500; margin-bottom: 18px; font-family: 'Montserrat', 'Poppins', sans-serif; letter-spacing:1px;">an <span class="intro-highlight">Aspiring Data Scientist</span></h3>
+  <p class="intro-desc" style="font-size: 1.35rem; margin-bottom: 24px; font-weight: 400; font-family: 'Poppins', 'Montserrat', sans-serif;">currently pursuing my <span class="intro-highlight" style='font-size:1.7rem;'>Masters in Data Science</span> at <span class="intro-highlight" style='font-size:1.5rem;'>Coventry University, United Kingdom</span></p>
       <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:24px 0 0 0;">
       <div style="margin:32px 0 24px 0;width:100%;">
       <div style="margin:32px 0 24px 0;width:100%;">

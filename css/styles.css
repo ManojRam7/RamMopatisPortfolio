@@ -1,3 +1,182 @@
+/* Single Hero Card Banner Animation */
+.scroll-banner {
+  overflow: hidden;
+  width: 100vw;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  position: relative;
+}
+.scroll-content {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  animation: bounceBannerSingle 60s ease-in-out infinite alternate;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ffd700;
+  box-shadow: 0 4px 24px #0003;
+  margin-right: 32px;
+  background: #fff;
+}
+.hero-name-highlight-large {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #222;
+  background: linear-gradient(90deg, #ffd700 60%, #fffbe6 100%);
+  padding: 12px 48px;
+  border-radius: 24px;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  text-shadow: 0 2px 12px #ffd70055, 0 0px 0px #fff0;
+  box-shadow: 0 2px 12px #ffd70033;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+@keyframes bounceBannerSingle {
+  0% { left: 0; }
+  100% { left: calc(100vw - 100% - 32px); }
+}
+/* Scrolling Banner with Hero Card */
+.scroll-banner {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100vw;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-content {
+  display: inline-flex;
+  align-items: center;
+  animation: bounceBanner 4.5s ease-in-out infinite alternate;
+}
+@keyframes bounceBanner {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(100vw - 100%)); }
+}
+}
+.scroll-content .hero-name-highlight {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #222;
+  background: linear-gradient(90deg, #ffd700 60%, #fffbe6 100%);
+  padding: 8px 32px;
+  border-radius: 18px;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  text-shadow: 0 2px 12px #ffd70055, 0 0px 0px #fff0;
+  margin: 0 12px;
+  box-shadow: 0 2px 12px #ffd70033;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+.scroll-content .hero-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffd700;
+  box-shadow: 0 2px 8px #0003;
+  margin: 0 8px;
+  background: #fff;
+}
+@keyframes scrollName {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-50%); }
+}
+/* Hero Card Section with Highlighted Name */
+.hero-card {
+  width: 100%;
+  max-width: 520px;
+  margin: 36px auto 0 auto;
+  background: linear-gradient(135deg, #5f0a87 0%, #a4508b 100%);
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(36,36,36,0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 24px 28px 24px;
+  position: relative;
+  z-index: 10;
+}
+.hero-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffd700;
+  box-shadow: 0 4px 24px #0003;
+  margin-bottom: 18px;
+  background: #fff;
+}
+.hero-name-highlight {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #222;
+  background: linear-gradient(90deg, #ffd700 60%, #fffbe6 100%);
+  padding: 8px 32px;
+  border-radius: 18px;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  text-shadow: 0 2px 12px #ffd70055, 0 0px 0px #fff0;
+  margin-bottom: 0;
+  box-shadow: 0 2px 12px #ffd70033;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* Stylish Intro Texts */
+.intro-main {
+  color: #fff;
+  text-shadow: 0 4px 24px #2228, 0 2px 12px #ffd70055;
+}
+.intro-sub {
+  color: #ffd700;
+  text-shadow: 0 2px 12px #2224, 0 1px 8px #ffd70033;
+}
+.intro-desc {
+  color: #fff;
+  text-shadow: 0 2px 8px #2223;
+}
+.intro-highlight {
+  color: #ffd700;
+  font-weight: 800;
+  text-shadow: 0 2px 12px #ffd70055, 0 0px 0px #fff0;
+  letter-spacing: 1px;
+}
+/* Animated Welcome Text (Zoom Only, White, More Zoom) */
+.zoom-welcome {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  display: inline-block;
+  color: #fff;
+  animation: zoomInOutWhite 3.5s ease-in-out infinite alternate;
+}
+@keyframes zoomInOutWhite {
+  0% {
+    transform: scale(1);
+    color: #fff;
+    text-shadow: 0 2px 12px #2222, 0 0px 0px #fff0;
+  }
+  50% {
+    transform: scale(1.32);
+    color: #fff;
+    text-shadow: 0 4px 24px #fff8, 0 0px 0px #fff0;
+  }
+  100% {
+    transform: scale(1);
+    color: #fff;
+    text-shadow: 0 2px 12px #2222, 0 0px 0px #fff0;
+  }
+}
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
