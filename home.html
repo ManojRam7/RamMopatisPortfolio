@@ -3,108 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Ram Mopati Portfolio</title>
+  <title>Manoj Ram Mopati — Data Scientist</title>
+  <meta name="description" content="Manoj Ram Mopati — Data Scientist with 3+ years of experience in retail, CPG and insurance analytics. Python, SQL, PySpark, R, Azure, Power BI.">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Confetti Canvas -->
-  <canvas id="confetti-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:999;"></canvas>
-  <div class="hero-card">
-    <img src="assets/profilepic.png" alt="Manoj Ram Mopati" class="hero-photo">
-    <span class="hero-name-highlight">Manoj Ram Mopati</span>
-  </div>
-  <section class="profile-section">
-  <div class="intro-text" style="
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 60vh;
-      text-align: center;
-      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-      color: #fff;
-      border-radius: 20px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-      margin: 40px auto;
-      padding: 40px 20px;
-      max-width: 700px;
-    ">
-      <div style="margin-bottom:18px;">
-        <span style="display:inline-block;background:rgba(0,0,0,0.18);color:#ffd700;padding:8px 24px;border-radius:16px;font-size:1.25rem;font-weight:600;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.10);">Building Data-Driven Solutions for Business Impact</span>
-      </div>
-      <h1 class="zoom-welcome">👋 Welcome to My Portfolio!</h1>
-    <h2 class="intro-main" style="font-size: 2.6rem; font-weight: 700; margin-bottom: 12px; font-family: 'Poppins', 'Montserrat', sans-serif; letter-spacing:1.5px;">Hi, I'm <span class="intro-highlight">Manoj Ram Mopati</span></h2>
-    <h3 class="intro-sub" style="font-size: 1.7rem; font-weight: 500; margin-bottom: 18px; font-family: 'Montserrat', 'Poppins', sans-serif; letter-spacing:1px;">a <span class="intro-highlight">Data Scientist with 3+ Years Experience</span></h3>
-  <p class="intro-desc" style="font-size: 1.35rem; margin-bottom: 24px; font-weight: 400; font-family: 'Poppins', 'Montserrat', sans-serif;">currently pursuing my <span class="intro-highlight" style='font-size:1.7rem;'>Masters in Data Science</span> at <span class="intro-highlight" style='font-size:1.5rem;'>Coventry University, United Kingdom</span></p>
-      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:24px 0 0 0;">
-      <div style="margin:32px 0 24px 0;width:100%;">
-      <div style="margin:32px 0 24px 0;width:100%;">
-        <h2 style="font-size:1.5rem;font-weight:700;color:#ffd700;margin-bottom:18px;">Testimonials</h2>
-        <div style="display:flex;flex-wrap:wrap;gap:18px;justify-content:center;align-items:stretch;">
-          <div style="background:rgba(255,255,255,0.13);border-radius:16px;padding:24px 20px;max-width:320px;box-shadow:0 2px 12px rgba(36,36,36,0.10);display:flex;flex-direction:column;align-items:center;">
-            <i class="fas fa-quote-left" style="color:#ffd700;font-size:1.5rem;margin-bottom:8px;"></i>
-            <p style="font-size:1.08rem;color:#fff;font-style:italic;margin-bottom:12px;">“ManojRam consistently delivers actionable insights and innovative solutions. His data-driven approach has transformed our business reporting.”</p>
-            <span style="font-weight:600;color:#ffd700;">— Project Manager, Infosys</span>
-          </div>
-          <div style="background:rgba(255,255,255,0.13);border-radius:16px;padding:24px 20px;max-width:320px;box-shadow:0 2px 12px rgba(36,36,36,0.10);display:flex;flex-direction:column;align-items:center;">
-            <i class="fas fa-quote-left" style="color:#ffd700;font-size:1.5rem;margin-bottom:8px;"></i>
-            <p style="font-size:1.08rem;color:#fff;font-style:italic;margin-bottom:12px;">“His technical expertise and collaborative spirit make him a standout contributor to any analytics team.”</p>
-            <span style="font-weight:600;color:#ffd700;">— Data Lead, UK Insurance Client</span>
-          </div>
-          <div style="background:rgba(255,255,255,0.13);border-radius:16px;padding:24px 20px;max-width:320px;box-shadow:0 2px 12px rgba(36,36,36,0.10);display:flex;flex-direction:column;align-items:center;">
-            <i class="fas fa-quote-left" style="color:#ffd700;font-size:1.5rem;margin-bottom:8px;"></i>
-            <p style="font-size:1.08rem;color:#fff;font-style:italic;margin-bottom:12px;">“A true professional in data science, always eager to learn and share knowledge.”</p>
-            <span style="font-weight:600;color:#ffd700;">— Professor, Coventry University</span>
-          </div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="home.html" class="brand">Manoj Ram <span>Mopati</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work-experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="kicker">Data Scientist</div>
+        <h1>Hi, I'm <span class="grad">Manoj Ram Mopati</span></h1>
+        <div class="role">Turning data into business decisions</div>
+        <p class="sub">Data Scientist with 3+ years' experience across retail, consumer-goods and insurance — building demand models, ML pipelines and decision tools that move real business metrics.</p>
+        <div class="meta">
+          <span><i class="fas fa-location-dot"></i> Birmingham, United Kingdom</span>
+          <span><i class="fas fa-graduation-cap"></i> MSc Data Science, Coventry University</span>
+          <span><i class="fas fa-circle" style="color:#10b981;font-size:.6rem"></i> Open to opportunities</span>
+        </div>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
+          <a href="assets/resume.pdf" class="btn btn-outline" download><i class="fas fa-download"></i> Download CV</a>
+          <a href="https://www.linkedin.com/in/manojrammopati/" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/ManojRam7" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
         </div>
       </div>
-      </div>
-      <div style="margin:32px 0 24px 0;width:100%;">
-        <h2 style="font-size:1.5rem;font-weight:700;color:#ffd700;margin-bottom:18px;">Achievements & Certifications</h2>
-        <div style="display:flex;flex-wrap:wrap;gap:18px;justify-content:center;align-items:center;">
-          <span title="3+ Years Data Science Experience" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);"><i class="fas fa-briefcase" style="color:#ffd700;font-size:1.5rem;"></i>3+ Yrs Experience</span>
-          <span title="Master's in Data Science - Coventry University" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);"><i class="fas fa-graduation-cap" style="color:#ffd700;font-size:1.5rem;"></i>MSc Data Science</span>
-          <span title="Bachelor of Technology - Mechanical Engineering" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);"><i class="fas fa-star" style="color:#ffd700;font-size:1.5rem;"></i>B.Tech (2:1 Hons)</span>
-          <span title="MLOps & Cloud Deployment" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);"><i class="fas fa-cloud" style="color:#ffd700;font-size:1.5rem;"></i>MLOps Practitioner</span>
-          <span title="End-to-End ML Lifecycle Management" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);"><i class="fas fa-cogs" style="color:#ffd700;font-size:1.5rem;"></i>ML Lifecycle Expert</span>
-          <span title="Academic Excellence" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);"><i class="fas fa-award" style="color:#ffd700;font-size:1.5rem;"></i>4 Academic Projects</span>
-        </div>
-      </div>
-        <h2 style="font-size:1.5rem;font-weight:700;color:#ffd700;margin-bottom:18px;">Skills & Technologies</h2>
-        <div style="display:flex;flex-wrap:wrap;gap:18px;justify-content:center;align-items:center;">
-          <span title="Python" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fab fa-python" style="color:#ffd700;font-size:1.5rem;"></i>Python</span>
-          <span title="SQL" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fas fa-database" style="color:#ffd700;font-size:1.5rem;"></i>SQL</span>
-          <span title="PySpark" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fas fa-layer-group" style="color:#ffd700;font-size:1.5rem;"></i>PySpark</span>
-          <span title="R" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fas fa-chart-line" style="color:#ffd700;font-size:1.5rem;"></i>R</span>
-          <span title="Power BI" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fas fa-chart-bar" style="color:#ffd700;font-size:1.5rem;"></i>Power BI</span>
-          <span title="Azure Services" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fab fa-microsoft" style="color:#ffd700;font-size:1.5rem;"></i>Azure</span>
-          <span title="Machine Learning" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fas fa-robot" style="color:#ffd700;font-size:1.5rem;"></i>ML</span>
-          <span title="Tableau" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fas fa-chart-area" style="color:#ffd700;font-size:1.5rem;"></i>Tableau</span>
-          <span title="Docker" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fab fa-docker" style="color:#ffd700;font-size:1.5rem;"></i>Docker</span>
-          <span title="Git/DevOps" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fab fa-git-alt" style="color:#ffd700;font-size:1.5rem;"></i>Git/DevOps</span>
-          <span title="NLP" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fas fa-brain" style="color:#ffd700;font-size:1.5rem;"></i>NLP</span>
-          <span title="Statistical Analysis" style="background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:12px;display:flex;align-items:center;gap:8px;font-size:1.08rem;"><i class="fas fa-chart-pie" style="color:#ffd700;font-size:1.5rem;"></i>Statistics</span>
-        </div>
-      </div>
-  <a href="home.html" class="btn" aria-label="Go to Home page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">Home</a>
-  <a href="about.html" class="btn" aria-label="Go to About Me page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">About Me</a>
-  <a href="work-experience.html" class="btn" aria-label="Go to Work Experience page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">Work Experience</a>
-  <a href="projects.html" class="btn" aria-label="Go to Freelance Projects page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">Freelance Projects</a>
-  <a href="resume.html" class="btn" aria-label="Go to Resume page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">My Resume</a>
-  <a href="contact.html" class="btn" aria-label="Go to Contact Me page" style="background:#ffd700;color:#091d4b;font-weight:bold;padding:10px 22px;border-radius:24px;text-decoration:none;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.3s;">Contact Me</a>
+      <img src="assets/profilepic.png" alt="Manoj Ram Mopati" class="hero-photo">
+    </div>
+  </header>
+
+  <section class="block">
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat"><div class="n">3+</div><div class="l">Years' experience</div></div>
+        <div class="stat"><div class="n">US $bn</div><div class="l">Market analysed (SRM)</div></div>
+        <div class="stat"><div class="n">5&ndash;8%</div><div class="l">Trade-promo margin uplift</div></div>
+        <div class="stat"><div class="n">12+</div><div class="l">End-to-end projects</div></div>
       </div>
     </div>
   </section>
-  <div style="width:100%;display:flex;justify-content:center;margin-top:40px;">
-    <div style="background:#111;color:#fff;padding:16px 32px;border-radius:12px;font-size:1rem;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.10);width:fit-content;">
-      &copy; 2024 Ram Mopati. All rights reserved.
+
+  <section class="block alt-bg">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Featured Work</div>
+        <h2>Strategic Revenue Management &amp; Trade Promotion Optimisation</h2>
+        <p>The flagship platform from my Infosys / Mars Wrigley engagement — rebuilt as a shareable, runnable portfolio project.</p>
+      </div>
+      <div class="featured reveal">
+        <div class="cat">Flagship Project · CPG / Retail</div>
+        <h3>Demand modelling &rarr; baseline decomposition &rarr; promo optimisation</h3>
+        <p>An end-to-end pipeline that models how price, promotion, display and competition drive sales, splits every week into baseline vs promotional lift, and recommends the most profitable trade-promotion plan under business guardrails. Mirrors a production Azure / Databricks platform, with a runnable Python engine and an R-based Marketing Mix Modelling workstream.</p>
+        <div class="mini-stats">
+          <div><div class="n">0.98</div><div class="l">median R&sup2; (out-of-sample)</div></div>
+          <div><div class="n">0.03</div><div class="l">elasticity recovery error</div></div>
+          <div><div class="n">+5&ndash;8%</div><div class="l">margin on optimised plans</div></div>
+        </div>
+        <div class="tags">
+          <span class="tag">PySpark / Databricks</span><span class="tag">log-log elasticity</span>
+          <span class="tag">OR-Tools optimiser</span><span class="tag">R / glmnet MMM</span>
+          <span class="tag">Azure</span><span class="tag">Python</span>
+        </div>
+        <div class="card-links">
+          <a href="projects.html" style="color:#5eead4"><i class="fas fa-arrow-right"></i> See full project</a>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Toolbox</div>
+        <h2>Skills &amp; technologies</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="skill-group"><h4>Languages</h4><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">PySpark</span><span class="tag">R</span></div></div>
+        <div class="skill-group"><h4>Data Science &amp; ML</h4><div class="tags"><span class="tag">Regression</span><span class="tag">Classification</span><span class="tag">Clustering</span><span class="tag">Time series</span><span class="tag">NLP</span><span class="tag">RFM segmentation</span><span class="tag">Feature engineering</span><span class="tag">Statistical modelling</span><span class="tag">GenAI / RAG</span></div></div>
+        <div class="skill-group"><h4>Cloud &amp; Big Data</h4><div class="tags"><span class="tag">Azure Databricks</span><span class="tag">Data Factory</span><span class="tag">Data Lake</span><span class="tag">Azure ML</span><span class="tag">Azure SQL</span><span class="tag">GCP</span></div></div>
+        <div class="skill-group"><h4>BI, MLOps &amp; Delivery</h4><div class="tags"><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">DAX / Power Query</span><span class="tag">Git / DevOps</span><span class="tag">CI/CD</span><span class="tag">Docker</span><span class="tag">Airflow</span><span class="tag">Agile / Jira</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="f-name">Manoj Ram Mopati</span>
+      <div>
+        <a href="https://www.linkedin.com/in/manojrammopati/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ManojRam7" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:manojrammopati111@gmail.com">Email</a>
+      </div>
+      <span style="color:#94a3b8">&copy; <span id="year">2026</span> Manoj Ram Mopati</span>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>
