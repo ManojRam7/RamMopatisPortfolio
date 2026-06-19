@@ -1,4 +1,4 @@
-# Manoj Ram Mopati — Portfolio
+# Manoj Ram Mopati - Portfolio
 
 A clean, responsive static portfolio (HTML/CSS/JS, no build step) for a Data Scientist.
 
