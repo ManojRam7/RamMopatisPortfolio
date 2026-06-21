@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Manoj Ram Mopati</title>
-  <meta name="description" content="Data science projects by Manoj Ram Mopati: trade-promotion optimisation, MMM, churn, computer vision, NLP and more.">
+  <title>Projects — Manoj Ram Mopati</title>
+  <meta name="description" content="Data science projects by Manoj Ram Mopati: trade-promotion optimisation, health-insurance ML pipeline, churn, computer vision, NLP, GenAI and more.">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
@@ -28,13 +28,14 @@
   <section class="block">
     <div class="container">
       <div class="section-head reveal">
-        <div class="kicker">Featured Project</div>
-        <h2>SRM &amp; Trade Promotion Optimisation + Marketing Mix Modelling</h2>
-        <p>An end-to-end CPG analytics platform, the flagship piece from my Mars Wrigley engagement, rebuilt on synthetic data so it is fully shareable and runnable.</p>
+        <div class="kicker">Featured Projects</div>
+        <h2>Flagship, end-to-end platforms</h2>
+        <p>My most substantial builds — enterprise-style pipelines spanning data engineering, modelling, optimisation and deployment.</p>
       </div>
+
       <div class="featured reveal">
         <div class="cat">Flagship · CPG / Retail · Python · PySpark · R</div>
-        <h3>From demand model to profitable promo plan</h3>
+        <h3>SRM &amp; Trade Promotion Optimisation + Marketing Mix Modelling</h3>
         <p>Models how unit sales respond to price, promotion, display, seasonality and competition using <b style="color:#fff">log-log regression</b> (price coefficient = elasticity), decomposes every week into <b style="color:#fff">baseline vs incremental lift</b>, and feeds the elasticities into a <b style="color:#fff">Google OR-Tools optimiser</b> that recommends the most profitable trade-promotion calendar under margin, trade-spend and average-price guardrails. A parallel <b style="color:#fff">R / glmnet Marketing Mix Modelling</b> workstream adds contribution decomposition, ROI ranking and scenario simulation.</p>
         <div class="mini-stats">
           <div><div class="n">0.98</div><div class="l">median R&sup2; (out-of-sample)</div></div>
@@ -50,6 +51,24 @@
           <a href="https://github.com/ManojRam7" target="_blank" rel="noopener" style="color:#5eead4"><i class="fab fa-github"></i> Code on GitHub</a>
         </div>
       </div>
+
+      <div class="featured reveal" style="margin-top:24px">
+        <div class="cat">Flagship · Healthcare Insurance · PySpark · Medallion Lakehouse</div>
+        <h3>Enterprise Health-Insurance ML Pipeline</h3>
+        <p>An enterprise-grade, end-to-end platform that runs <b style="color:#fff">62,000+ insurance records</b> through a <b style="color:#fff">Bronze &rarr; Silver &rarr; Gold medallion architecture</b> — raw ingestion, cleansing and validation, then star-schema marts and ML-ready datasets. On the Gold layer it trains and evaluates <b style="color:#fff">three decision-support models</b> — policy-churn risk, claim-fraud risk and high-cost-claim prediction — and produces batch-scored outputs, all driven by config-based runs, automated tests and CI/CD.</p>
+        <div class="mini-stats">
+          <div><div class="n">62K+</div><div class="l">records through the pipeline</div></div>
+          <div><div class="n">3</div><div class="l">models: churn / fraud / high-cost</div></div>
+          <div><div class="n">Bronze&rarr;Gold</div><div class="l">medallion data layers</div></div>
+        </div>
+        <div class="tags">
+          <span class="tag">PySpark</span><span class="tag">Medallion (Bronze/Silver/Gold)</span><span class="tag">star-schema marts</span>
+          <span class="tag">scikit-learn</span><span class="tag">Docker</span><span class="tag">GitHub Actions CI/CD</span><span class="tag">pytest</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/ManojRam7/health_insurance_project" target="_blank" rel="noopener" style="color:#5eead4"><i class="fab fa-github"></i> Code on GitHub</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -59,7 +78,7 @@
       <div class="section-head reveal">
         <div class="kicker">Applied Machine Learning</div>
         <h2>End-to-end ML projects</h2>
-        <p>Self-built projects spanning the full lifecycle: data, modelling, deployment and a live demo where hosted.</p>
+        <p>Self-built projects covering the full lifecycle — data, modelling, deployment and a live demo where hosted.</p>
       </div>
       <div class="grid grid-3">
 
@@ -67,8 +86,8 @@
           <div class="icon"><i class="fas fa-user-minus"></i></div>
           <div class="cat">Telecom · MLOps</div>
           <h3>Customer Churn Prediction</h3>
-          <p>Production-ready ML web app predicting telecom customer churn, with real-time scoring, automated deployment on Azure, and an end-to-end MLOps workflow to flag at-risk customers.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Azure Web App</span><span class="tag">MLOps</span></div>
+          <p>A Random Forest churn model served through a <b>FastAPI</b> app (web UI + REST <code>/predict</code>), containerised with <b>Docker</b> and deployed to <b>Azure Container Apps</b>, with automated testing and deployment via <b>GitHub Actions CI/CD</b>.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Random Forest</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Azure Container Apps</span><span class="tag">CI/CD</span></div>
           <div class="card-links">
             <a href="https://telecomchurnazurewebapp-bjb4f4drcqewc5e2.canadacentral-01.azurewebsites.net" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
             <a href="https://github.com/ManojRam7/CustomerChurn_Prediction" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
@@ -79,8 +98,8 @@
           <div class="icon"><i class="fas fa-leaf"></i></div>
           <div class="cat">Computer Vision · Agri</div>
           <h3>Potato Leaf Disease Detection</h3>
-          <p>Deep-learning image classifier that identifies potato leaf diseases (early/late blight) from photos, giving farmers fast, practical early detection through a simple web app.</p>
-          <div class="tags"><span class="tag">TensorFlow</span><span class="tag">CNN</span><span class="tag">Streamlit</span></div>
+          <p>A <b>TensorFlow CNN</b> that classifies potato leaf images as Early Blight, Late Blight or Healthy, served through a <b>FastAPI</b> backend and an interactive <b>Streamlit</b> app (plus a CLI) for fast in-field diagnosis.</p>
+          <div class="tags"><span class="tag">TensorFlow</span><span class="tag">CNN</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span></div>
           <div class="card-links">
             <a href="https://potatodisease-classifier-app.streamlit.app" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
             <a href="https://github.com/ManojRam7/PotatoDisease_Classifier" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
@@ -90,9 +109,9 @@
         <div class="card reveal"><div class="card-band"></div><div class="card-body">
           <div class="icon"><i class="fas fa-scale-balanced"></i></div>
           <div class="cat">Finance · Risk</div>
-          <h3>Loan Approval &amp; Credit Risk</h3>
-          <p>ML application that predicts loan-approval outcomes from applicant financial and demographic features, supporting faster, more consistent risk assessment for lenders.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Streamlit</span></div>
+          <h3>Loan Approval Prediction</h3>
+          <p>A <b>Random Forest</b> classifier predicting loan-approval outcomes from applicant financial and demographic features (with a live debt-to-income calculation), reaching <b>~82% test accuracy</b>, served via a Streamlit app with confidence scores.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Random Forest</span><span class="tag">Streamlit</span><span class="tag">82% accuracy</span></div>
           <div class="card-links">
             <a href="https://loanapprovalprediction-app.streamlit.app" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
             <a href="https://github.com/ManojRam7/LoanApproval_Prediction" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
@@ -103,8 +122,8 @@
           <div class="icon"><i class="fas fa-gem"></i></div>
           <div class="cat">Regression · Pricing</div>
           <h3>Gemstone Price Predictor</h3>
-          <p>Price-estimation model for gemstones based on carat, cut, colour, clarity and dimensions, with a complete pipeline from ingestion and preprocessing to model training.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">ML pipeline</span></div>
+          <p>An end-to-end regression pipeline (ingestion &rarr; transformation &rarr; training &rarr; inference) that prices gemstones from carat, cut, colour, clarity and dimensions — benchmarking <b>scikit-learn, XGBoost and CatBoost</b> and auto-selecting the best model by test R², served via Streamlit and a <b>Flask JSON API</b>.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">CatBoost</span><span class="tag">Flask</span><span class="tag">Streamlit</span></div>
           <div class="card-links">
             <a href="https://github.com/ManojRam7/GemStonePrice_Predictor" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
           </div>
@@ -114,8 +133,8 @@
           <div class="icon"><i class="fas fa-house"></i></div>
           <div class="cat">Regression · Real Estate</div>
           <h3>House Price Predictor</h3>
-          <p>Web app estimating property values from multiple features using an ensemble of CatBoost, XGBoost and KNN, guiding users through realistic price predictions.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">CatBoost</span><span class="tag">Streamlit</span></div>
+          <p>A reproducible house-price regression with engineered interaction features (e.g. RM&times;LSTAT), persisted model artifacts and tracked metrics — <b>R² 0.87</b> (RMSE 2.58) — served through a <b>Streamlit</b> inference app.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Feature engineering</span><span class="tag">Streamlit</span><span class="tag">R² 0.87</span></div>
           <div class="card-links">
             <a href="https://boston-houseprice-predictor.streamlit.app" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
             <a href="https://github.com/ManojRam7/BostonHousePrice_Predictor" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
@@ -124,10 +143,10 @@
 
         <div class="card reveal"><div class="card-band"></div><div class="card-body">
           <div class="icon"><i class="fas fa-heart-pulse"></i></div>
-          <div class="cat">Healthcare · Deep Learning</div>
+          <div class="cat">Healthcare · Classification</div>
           <h3>Breast Cancer Predictor</h3>
-          <p>Clinical decision-support model that predicts breast-cancer likelihood from diagnostic features, helping clinicians with rapid, consistent early-screening signals.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Deep learning</span><span class="tag">Streamlit</span></div>
+          <p>A reproducible diagnostic classifier on the Wisconsin dataset using a <b>StandardScaler + Logistic Regression</b> pipeline (malignant vs benign), evaluated on accuracy, precision, recall, F1 and ROC AUC (<b>~0.98 accuracy, 0.996 ROC AUC</b>), with a Streamlit app and automated tests.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Logistic Regression</span><span class="tag">Streamlit</span></div>
           <div class="card-links">
             <a href="https://breastcancerpredictor-app.streamlit.app" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
             <a href="https://github.com/ManojRam7/BreastCancer_Predictor" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
@@ -136,10 +155,10 @@
 
         <div class="card reveal"><div class="card-band"></div><div class="card-body">
           <div class="icon"><i class="fas fa-graduation-cap"></i></div>
-          <div class="cat">Education · Analytics</div>
+          <div class="cat">Education · Regression</div>
           <h3>Student Performance Predictor</h3>
-          <p>Model predicting student academic outcomes from academic and socio-demographic factors, enabling early identification of at-risk students for targeted intervention.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">EDA</span></div>
+          <p>An end-to-end regression pipeline predicting a student's math score from demographic and academic indicators — benchmarking several regressors, persisting the best model, and serving predictions through a <b>Flask</b> web app.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Flask</span><span class="tag">ML pipeline</span></div>
           <div class="card-links">
             <a href="https://github.com/ManojRam7/StudentPerformance_Predictor" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
           </div>
@@ -155,7 +174,7 @@
       <div class="section-head reveal">
         <div class="kicker">Academic Projects</div>
         <h2>MSc Data Science · Coventry University</h2>
-        <p>Selected projects from my Master's covering NLP, big-data, advanced analytics and marketing analytics.</p>
+        <p>Selected projects from my Master's covering NLP, big-data, GenAI and marketing analytics.</p>
       </div>
       <div class="grid grid-2">
 
@@ -180,7 +199,7 @@
           <div class="cat">GenAI · RAG</div>
           <h3>RAG Analytics Assistant for Business Reports</h3>
           <p>Designed a GenAI assistant using retrieval-augmented generation to query business reports and return source-grounded, citation-backed summaries.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Data retrieval</span><span class="tag">Business reports</span><span class="tag">Analytics</span></div>
+          <div class="tags"><span class="tag">Python</span><span class="tag">LLM</span><span class="tag">RAG</span><span class="tag">GenAI</span></div>
         </div></div>
 
         <div class="card reveal"><div class="card-band"></div><div class="card-body">
