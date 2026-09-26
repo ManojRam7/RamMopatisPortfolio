@@ -12,17 +12,20 @@ Personal portfolio of Manoj Ram Mopati, Data Scientist in London.
 | `about.html` | Background, skills, education and certifications |
 | `work-experience.html` | Roles at Tahir Group and Infosys |
 | `projects.html` | All projects, with filters by area |
-| `ai-career-copilot.html` | Case study of the AI Job-Search & Application Copilot |
+| `job-search-agent.html` | Case study of the Multi-LLM GenAI Job-Search Agent |
 | `resume.html` | CV viewer and PDF download |
 | `contact.html` | Contact details |
 
-`home.html` redirects to `index.html` so older links keep working.
+Two older page addresses (`home.html` and the previous case-study URL) redirect to their current pages.
+
+Project cover images in `assets/projects/` are charts drawn from each project's own dataset.
 
 ## Built with
 
 Plain HTML, CSS and JavaScript with no build step, hosted on GitHub Pages. Styles live in `css/styles.css`
 (colours and spacing are CSS variables at the top of the file) and behaviour in `js/script.js`
-(mobile menu, scroll animations and project filters).
+(mobile menu, scroll animations and project filters). Each project card has its own colour theme
+(`.t-*` classes).
 
 ## Running locally
 

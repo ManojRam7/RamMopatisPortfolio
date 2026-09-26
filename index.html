@@ -109,40 +109,43 @@
         <div class="section-head reveal">
           <div class="eyebrow">Selected work</div>
           <h2>Featured projects</h2>
-          <p>A multi-LLM system I run every day, a retrieval-augmented assistant and an end-to-end ML platform.</p>
+          <p>A multi-LLM job-search agent I use every day, a retrieval-augmented analytics agent and an end-to-end insurance analytics platform.</p>
         </div>
-        <div class="grid grid-3">
-          <article class="card pcard c-genai reveal" data-cat="genai data">
-            <div class="cover"><div class="glyph"><i class="fas fa-robot"></i></div><span class="badge">Case study</span></div>
+        <div class="grid grid-3 balance">
+          <article class="card pcard t-genai reveal" data-cat="genai data">
+            <div class="cover"><img src="assets/projects/agent.webp" alt="Pipeline diagram: collect, clean, rank, track and apply" width="1200" height="540" loading="lazy" decoding="async"><span class="badge">Case study</span></div>
             <div class="body">
+              <div class="glyph" aria-hidden="true"><i class="fas fa-robot"></i></div>
               <div class="kind">GenAI · Multi-LLM system</div>
-              <h3>AI Job-Search &amp; Application Copilot</h3>
-              <p>A multi-LLM system that collects 2,000+ live roles a day from 9 ATS APIs and job boards, ranks each one against my CV with a three-model LLM-as-a-judge cascade, and helps complete applications through a Chrome extension that learns from my edits.</p>
-              <div class="results"><span class="res">2,000+ roles a day</span><span class="res">3-model cascade</span><span class="res">140+ tests</span></div>
+              <h3>Multi-LLM GenAI Job-Search Agent</h3>
+              <p>A multi-LLM system that collects 2,000+ live roles a day from 9 ATS APIs and job boards, scores each one against my CV with a three-model LLM-as-a-judge cascade, and assists with applications through a Chrome extension that learns from my edits.</p>
+              <div class="results"><span class="res">2,000+ roles a day</span><span class="res">3-model LLM cascade</span><span class="res">140+ automated tests</span></div>
               <div class="tags"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">OpenAI · Gemini · DeepSeek</span><span class="tag">Next.js</span><span class="tag">Chrome MV3</span></div>
-              <div class="links"><a href="ai-career-copilot.html"><i class="fas fa-book-open"></i> Read the case study</a><span><i class="fas fa-lock"></i> Private repository</span></div>
+              <div class="links"><a href="job-search-agent.html"><i class="fas fa-book-open"></i> Read the case study</a><span><i class="fas fa-lock"></i> Private repository</span></div>
             </div>
           </article>
-          <article class="card pcard c-genai reveal" data-cat="genai">
-            <div class="cover"><div class="glyph"><i class="fas fa-magnifying-glass-chart"></i></div><span class="badge">MSc</span></div>
+          <article class="card pcard t-fuchsia reveal" data-cat="genai">
+            <div class="cover"><img src="assets/projects/rag.webp" alt="Embedding space with a query and its nearest document chunks" width="1200" height="540" loading="lazy" decoding="async"><span class="badge">MSc</span></div>
             <div class="body">
+              <div class="glyph" aria-hidden="true"><i class="fas fa-magnifying-glass-chart"></i></div>
               <div class="kind">GenAI · Retrieval-augmented generation</div>
-              <h3>RAG Document Analytics Assistant</h3>
-              <p>Ask questions of business reports and get answers with the page they came from. Documents in several formats are chunked, embedded into a FAISS index and retrieved for a Gemini model, with automated answer evaluation and unit tests around the pipeline.</p>
-              <div class="results"><span class="res">Page-level citations</span><span class="res">Automated evaluation</span></div>
+              <h3>RAG Analytics Agent</h3>
+              <p>Question answering over business reports, with every answer traced to its source page. Reports in PDF, Word, Markdown or text are chunked, embedded into a FAISS index and retrieved for a Gemini model, with automated answer evaluation and unit tests across the pipeline.</p>
+              <div class="results"><span class="res">Page-level citations</span><span class="res">Automated answer evaluation</span></div>
               <div class="tags"><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">Gemini API</span><span class="tag">Streamlit</span><span class="tag">pytest</span></div>
-              <div class="links"><a href="https://github.com/ManojRam7/RAG_Analytics_Assistant" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source code</a></div>
+              <div class="links"><a href="https://github.com/ManojRam7/RAG_Analytics_Agent" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source code</a></div>
             </div>
           </article>
-          <article class="card pcard c-data reveal" data-cat="ml data">
-            <div class="cover"><div class="glyph"><i class="fas fa-shield-heart"></i></div><span class="badge">End to end</span></div>
+          <article class="card pcard t-data reveal" data-cat="ml data">
+            <div class="cover"><img src="assets/projects/health.webp" alt="Bronze, silver and gold data layers" width="1200" height="540" loading="lazy" decoding="async"><span class="badge">End to end</span></div>
             <div class="body">
+              <div class="glyph" aria-hidden="true"><i class="fas fa-shield-heart"></i></div>
               <div class="kind">ML engineering · Insurance</div>
-              <h3>Health Insurance ML Pipeline</h3>
-              <p>An end-to-end platform built on PySpark and Delta Lake: bronze, silver and gold layers, star-schema marts, and churn, fraud and high-cost-claim classifiers with MLflow tracking, batch scoring, data-quality monitoring, Docker and CI/CD in GitHub Actions.</p>
-              <div class="results"><span class="res">3 classification models</span><span class="res">Medallion architecture</span></div>
+              <h3>Health Insurance Analytics Platform</h3>
+              <p>An end-to-end platform on PySpark and Delta Lake: bronze, silver and gold layers, star-schema marts, and churn, fraud and high-cost-claim classifiers with MLflow experiment tracking, batch scoring, data-quality monitoring, Docker and CI/CD in GitHub Actions.</p>
+              <div class="results"><span class="res">3 classification models</span><span class="res">Medallion architecture</span><span class="res">CI/CD</span></div>
               <div class="tags"><span class="tag">PySpark</span><span class="tag">Delta Lake</span><span class="tag">MLflow</span><span class="tag">scikit-learn</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span></div>
-              <div class="links"><a href="https://github.com/ManojRam7/health_insurance_project" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source code</a></div>
+              <div class="links"><a href="https://github.com/ManojRam7/health_insurance_Analytics_Platform" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source code</a></div>
             </div>
           </article>
         </div>
@@ -160,8 +163,8 @@
               <h2 style="font-size:clamp(1.5rem,2.4vw,2rem);margin:10px 0 12px">Three industries, one habit: measure what changed</h2>
               <p>At Infosys I built marketing mix models and promotion optimisation for a US confectionery business,
               customer risk segmentation for an energy provider and claims analytics for a health insurer. At Tahir
-              Group I use difference-in-differences to test whether operational changes across restaurant sites
-              actually work.</p>
+              Group I use difference-in-differences to evaluate whether operational changes across restaurant sites
+              deliver measurable results.</p>
               <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
                 <a href="work-experience.html" class="btn btn-primary"><i class="fas fa-briefcase"></i> Experience</a>
                 <a href="about.html" class="btn btn-glass"><i class="fas fa-user"></i> About me</a>

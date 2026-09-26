@@ -13,7 +13,7 @@ if (toggle && links) {
 const page = location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a').forEach((a) => {
   const href = a.getAttribute('href');
-  if (href === page || (page === 'index.html' && href === './') || (page === 'ai-career-copilot.html' && href === 'projects.html')) {
+  if (href === page || (page === 'index.html' && href === './') || (page === 'job-search-agent.html' && href === 'projects.html')) {
     a.classList.add('active');
   }
 });
