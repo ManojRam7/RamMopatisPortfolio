@@ -1,31 +1,32 @@
-# Manoj Ram Mopati - Portfolio
+# Manoj Ram Mopati · Portfolio
 
-A clean, responsive static portfolio (HTML/CSS/JS, no build step) for a Data Scientist.
+Personal portfolio of Manoj Ram Mopati, Data Scientist in London.
 
-**Live:** https://manojram7.github.io/RamMopatisPortfolio/
+**Live site:** https://manojram7.github.io/RamMopatisPortfolio/
 
-## Structure
+## Pages
+
+| Page | Content |
+|---|---|
+| `index.html` | Introduction, headline results, featured projects, certifications |
+| `about.html` | Background, skills, education and certifications |
+| `work-experience.html` | Roles at Tahir Group and Infosys |
+| `projects.html` | All projects, with filters by area |
+| `ai-career-copilot.html` | Case study of the AI Job-Search & Application Copilot |
+| `resume.html` | CV viewer and PDF download |
+| `contact.html` | Contact details |
+
+`home.html` redirects to `index.html` so older links keep working.
+
+## Built with
+
+Plain HTML, CSS and JavaScript with no build step, hosted on GitHub Pages. Styles live in `css/styles.css`
+(colours and spacing are CSS variables at the top of the file) and behaviour in `js/script.js`
+(mobile menu, scroll animations and project filters).
+
+## Running locally
+
+```bash
+python3 -m http.server 8000
+# then open http://localhost:8000
 ```
-home.html              Landing page (hero, stats, featured work, skills)
-about.html             Bio + education
-work-experience.html   Career timeline (3 roles)
-projects.html          Featured SRM/MMM + applied ML + academic projects
-resume.html            CV download
-contact.html           Contact details
-index.html             Redirect -> home.html
-css/styles.css         Single shared stylesheet (design system)
-js/script.js           Mobile nav, active link, scroll reveal, footer year
-assets/                Photo, resume.pdf, project images
-```
-
-## Design
-Light slate/indigo theme · Inter + Sora type · flat cards · responsive · accessible.
-All styling lives in `css/styles.css` (CSS variables at the top control the palette).
-
-## Deploy (GitHub Pages)
-Push these files to the repo serving GitHub Pages; the site updates at the same URL within ~1 minute. No build required.
-
-## To do (owner)
-- Push the SRM/MMM project repo and update the "Code on GitHub" link on home/projects.
-- Verify all Live Demo / Source links resolve.
-- Optionally add project screenshots/GIFs.

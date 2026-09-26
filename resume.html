@@ -1,52 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Manoj Ram Mopati</title>
-  <meta name="description" content="Download the resume of Manoj Ram Mopati, Data Scientist.">
+  <title>Resume | Manoj Ram Mopati, Data Scientist</title>
+  <meta name="description" content="CV of Manoj Ram Mopati, Data Scientist in London. View online or download as PDF.">
+  <meta name="author" content="Manoj Ram Mopati">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="canonical" href="https://manojram7.github.io/RamMopatisPortfolio/resume.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Resume | Manoj Ram Mopati, Data Scientist">
+  <meta property="og:description" content="CV of Manoj Ram Mopati, Data Scientist in London. View online or download as PDF.">
+  <meta property="og:url" content="https://manojram7.github.io/RamMopatisPortfolio/resume.html">
+  <meta property="og:image" content="https://manojram7.github.io/RamMopatisPortfolio/assets/profilepic.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <nav class="nav">
+  <a class="sr-only" href="#main">Skip to content</a>
+  <nav class="nav" aria-label="Main">
     <div class="nav-inner">
-      <a href="home.html" class="brand">Manoj Ram <span>Mopati</span></a>
-      <button class="nav-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <a href="index.html" class="brand"><span class="mono">MR</span> Manoj Ram Mopati</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
       <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="work-experience.html">Experience</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
-
-  <section class="block">
-    <div class="container">
-      <div class="resume-card reveal">
-        <div class="icon-lg"><i class="fas fa-file-lines"></i></div>
-        <h2>My Resume</h2>
-        <p class="muted">A one-page overview of my experience, skills and education. Download the PDF or explore the detail across this site.</p>
-        <div class="center" style="margin-top:18px">
-          <a href="assets/resume.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Download Resume (PDF)</a>
-          <a href="assets/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View in browser</a>
-        </div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Resume</div>
+        <h1>My CV</h1>
+        <p>Read it here or download the PDF. The rest of this site covers each role and project in more detail.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <section class="section">
+      <div class="container resume-layout">
+        <object class="pdf-frame reveal" data="assets/resume.pdf#view=FitH" type="application/pdf" aria-label="CV of Manoj Ram Mopati">
+          <div class="card card-pad center" style="margin:40px">
+            <p>Your browser can't show the PDF here.</p>
+            <a href="assets/resume.pdf" class="btn btn-primary" download="Manoj-Ram-Mopati-CV.pdf"><i class="fas fa-download"></i> Download CV</a>
+          </div>
+        </object>
+        <aside class="card side-card reveal">
+          <h3>Manoj Ram Mopati</h3>
+          <p class="muted" style="margin:0">Data Scientist &middot; London, UK</p>
+          <a href="assets/resume.pdf" class="btn btn-primary" download="Manoj-Ram-Mopati-CV.pdf"><i class="fas fa-download"></i> Download PDF</a>
+          <a href="assets/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Open in a new tab</a>
+          <ul class="hl">
+            <li><i class="fas fa-check"></i> 4+ years in data science and analytics</li>
+            <li><i class="fas fa-check"></i> Junior Data Analyst, Tahir Group</li>
+            <li><i class="fas fa-check"></i> Data Scientist, Infosys (retail, energy, health)</li>
+            <li><i class="fas fa-check"></i> MSc Data Science, Coventry University (76%)</li>
+            <li><i class="fas fa-check"></i> Databricks GenAI Engineer, PL-300, AZ-900</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="footer-inner">
-      <span class="f-name">Manoj Ram Mopati</span>
-      <div>
-        <a href="https://www.linkedin.com/in/manojrammopati/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/ManojRam7" target="_blank" rel="noopener">GitHub</a>
-        <a href="mailto:manojrammopati111@gmail.com">Email</a>
+      <div><span class="f-name">Manoj Ram Mopati</span> <span>&middot; Data Scientist &middot; London, UK</span></div>
+      <div class="f-links">
+        <a href="https://www.linkedin.com/in/manojrammopati/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/ManojRam7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:manojrammopati111@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
-      <span style="color:#94a3b8">&copy; <span id="year">2026</span> Manoj Ram Mopati</span>
+      <span>&copy; <span id="year">2026</span> Manoj Ram Mopati</span>
     </div>
   </footer>
   <script src="js/script.js"></script>
